@@ -1,0 +1,9 @@
+epoch 1 loss 1.4410826787352562 auc 0.7369178575341188 seconds 8
+epoch 2 loss 1.2048501016365156 auc 0.7488978204381063 seconds 15
+epoch 3 loss 1.0089636331217156 auc 0.7527729780167438 seconds 23
+epoch 4 loss 0.847321137578951 auc 0.7523945978036387 seconds 31
+epoch 5 loss 0.7151623738722669 auc 0.7498337283296941 seconds 39
+epoch 6 loss 0.6070508029725816 auc 0.745912497663001 seconds 46
+epoch 7 loss 0.5188801861885521 auc 0.7418401288833374 seconds 54
+epoch 8 loss 0.44544202068613636 auc 0.7382524921774836 seconds 63
+{"name": "spectral_factor_d32_day26_s42", "day": 26, "auc": 0.7527729780167438, "logloss": 0.23512640595436096, "recorded_utc": "2026-11-01T21:50:56.094173+00:00", "config": {"day": 26, "dim": 32, "epochs": 30, "pretrain": 0, "seed": 42, "lr": 0.008, "reg": 0.03, "no_history": false, "objective": "softmax", "tag": "spectral_factor", "full": false, "svd_init": true}, "seconds": 63.27353763580322, "artifact": "./arena_runs/spectral_factor_d32_day26_s42"}
