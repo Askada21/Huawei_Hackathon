@@ -1,0 +1,11 @@
+Distinct fitting clicks including warm-up: 881345
+epoch 1 loss 1.8683135430018107 auc 0.6908188457777189 seconds 8
+epoch 2 loss 1.5735320289929708 auc 0.7042997397980173 seconds 15
+epoch 3 loss 1.3282370189825694 auc 0.7128065892688171 seconds 20
+epoch 4 loss 1.1249880780776342 auc 0.7151561049275679 seconds 24
+epoch 5 loss 0.96593477850159 auc 0.7150070503950003 seconds 29
+epoch 6 loss 0.8426241820057233 auc 0.7129566175355909 seconds 33
+epoch 7 loss 0.746312607328097 auc 0.7101582601080697 seconds 37
+epoch 8 loss 0.6693731034795444 auc 0.7075691553930874 seconds 42
+epoch 9 loss 0.6066864132881165 auc 0.7045748265777918 seconds 46
+{"name": "regularized_factor_d32_day25_s42", "day": 25, "auc": 0.7151561049275679, "logloss": 0.262489914894104, "recorded_utc": "2026-11-01T21:53:59.320243+00:00", "config": {"day": 25, "dim": 32, "epochs": 12, "pretrain": 0, "seed": 42, "lr": 0.008, "reg": 1.0, "no_history": false, "objective": "softmax", "tag": "regularized_factor", "full": false, "svd_init": true, "cosine": false, "anchor": 0}, "seconds": 45.67500400543213, "artifact": "./arena_runs/regularized_factor_d32_day25_s42"}
