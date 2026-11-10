@@ -1,0 +1,27 @@
+# Local competition inputs, predictions and prepared arrays
+*.csv
+*.csv.zip
+arena_data/
+*.npy
+*.npz
+*.dat
+*.sqlite
+*.sqlite3
+# Model weights and generated model text
+*.pt
+*.pth
+lightgbm*.txt
+arena_runs/**/*.txt
+arena_reproductions/**/*.txt
+# Local dependencies and credentials
+.techarena_deps/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
