@@ -1,0 +1,35 @@
+{
+  "fit_event_bins": {
+    "0": {
+      "events": 595,
+      "candidate_auc": 0.7313323254275725,
+      "baseline_auc": 0.7313715392610791,
+      "delta": -3.9213833506579476e-05
+    },
+    "1_2": {
+      "events": 3088,
+      "candidate_auc": 0.7706736071127412,
+      "baseline_auc": 0.7686106843559589,
+      "delta": 0.002062922756782326
+    },
+    "3_5": {
+      "events": 6115,
+      "candidate_auc": 0.7978634269312501,
+      "baseline_auc": 0.7963008805746343,
+      "delta": 0.0015625463566157904
+    },
+    "6_10": {
+      "events": 8949,
+      "candidate_auc": 0.820470172927837,
+      "baseline_auc": 0.8198070860081874,
+      "delta": 0.0006630869196495581
+    },
+    "11_plus": {
+      "events": 16391,
+      "candidate_auc": 0.8388318646754815,
+      "baseline_auc": 0.8385428861009477,
+      "delta": 0.0002889785745338047
+    }
+  },
+  "note": "Read-only diagnostics, not causal/independent tests; subgroup AUCs do not average to global AUC."
+}
