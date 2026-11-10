@@ -1,0 +1,5 @@
+# V16: confidence interpolation for sparse profiles
+
+V14 uses the cold-history path only at zero fitting exposure, then fully trusts the profile after a single event. Test `w = impressions / (impressions + 20)` as a fixed, smooth profile confidence. Twenty impressions equals two complete fitting events; choose this once, no sweep. Scale the user vector, bias and user-time term by w, and interpolate history scale between w×known-scale and (1-w)×cold-scale. Masked pseudo-cold events retain w=0; completely unseen users also have w=0. No new fitted parameters, no new RNG or external statistics. Use V14's existing fitting-only exposure buffer.
+
+Keep all V14 losses, regularization, dimensions, dropout rate and initialization fixed. Compare main January 26 raw factors and the January 25 frame with checkpoint selection strictly before January 26. If promising, confirm January 24 and compare the full fixed-mixture/event pipeline against V14 on identical rows with paired event bootstrap. Optimize global AUC, not selected sparse subgroups. No V15 tree complexity changes. Preserve V14 and all submissions; no upload.
