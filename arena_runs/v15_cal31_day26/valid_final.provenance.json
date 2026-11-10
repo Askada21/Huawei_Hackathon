@@ -1,0 +1,20 @@
+{
+  "features": "./arena_runs/v14_coldpath_d32_day26_s42/calibration_features.npz",
+  "rows": "./arena_runs/v15_cal31_day26/valid_blend.npy",
+  "event_model": "./arena_runs/v14_event_coldpath/event_model.txt",
+  "output": "./arena_runs/v15_cal31_day26/valid_final.npy",
+  "row_events": "./arena_runs/v15_cal31_day26/valid_events.npy",
+  "event_alignment_verified": true,
+  "events": 35138,
+  "rows_count": 351380,
+  "fixed_correction_weight": 0.5,
+  "formula": "0.5 * row_probability + 0.5 * event_probability * row_probability / sum_event_row_probabilities",
+  "event_model_fitting": "January25 first-user OOT events strictly before January26; 35230 events, excluding8734 later events",
+  "event_model_fit_end_exclusive_utc": "2025-01-26T00:00:00Z",
+  "training_feature_checkpoint_selection_end_day": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "prediction_labels_read": false,
+  "output_sha256": "ffa2c4688be5d03979bde200dfe2175294525efda1bdcb1cb7e9ebbfd1adc433",
+  "event_model_sha256": "4cb538095309a83666447ba556a84f0ac9e58e793db34e24a55fb6073702cfbe",
+  "all_probabilities_finite_and_in_range": true
+}
