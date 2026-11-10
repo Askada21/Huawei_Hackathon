@@ -1,0 +1,54 @@
+{
+  "selected_validation_auc": 0.8089944032037183,
+  "validation_cutoff_utc": "2025-01-26T00:00:00Z",
+  "validation_events": 35138,
+  "validation_rows": 351380,
+  "factor_fit_events": 588873,
+  "factor_fit_rows": 5888730,
+  "combiner_training_events": 35230,
+  "combiner_training_end_exclusive_utc": "2025-01-26T00:00:00Z",
+  "second_cutoff_raw_factor_auc": 0.7369414738402007,
+  "final_factor_fit_events": 686824,
+  "final_factor_fit_rows": 6868240,
+  "final_distinct_past_click_observations": 1009701,
+  "full_refit_epochs": 3,
+  "final_model": "arena_runs/final_joint_d32_day26_s42_full/model.pt",
+  "combiner": "arena_runs/calibrated_clean/model.txt",
+  "submission": {
+    "file": "./submission_techarena_20261101_v2.csv",
+    "rows": 529390,
+    "min_probability": 0.002392115165,
+    "max_probability": 0.6855391649,
+    "mean_probability": 0.0640911456299364,
+    "sha256": "90e84abe53b5493830fad8a5ff05c8575c03d32478272c9d9ba55d3863c5267e",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "arena_runs/final_joint_d32_day26_s42_full/evaluation_calibrated_clean.npy"
+    ]
+  },
+  "uncertainty": {
+    "bootstrap_unit": "event = distinct validation user, all 10 rows together",
+    "replicates": 150,
+    "seed": 42,
+    "auc": 0.8089944032037183,
+    "auc_95_percentile_interval": [
+      0.8063884938846857,
+      0.8120917775154963
+    ],
+    "delta_vs_calibrated_converged": 0.0007354338181170261,
+    "delta_95_percentile_interval": [
+      0.00041866033084032584,
+      0.0009823860236453875
+    ],
+    "limitation": "Sampling uncertainty only; does not account for model selection or temporal distribution shift."
+  },
+  "official_score": null,
+  "uploaded": false,
+  "reproduce_command": "python3 arena/run_selected.py",
+  "audit_exclusions": "arena_runs/invalid_experiments.json"
+}
