@@ -1,0 +1,40 @@
+{
+  "name": "v10_historybucket_decision",
+  "recorded_utc": "2026-11-02T18:41:03.672545+00:00",
+  "decision": "retain_v8",
+  "candidate_local_auc": 0.8175194731319716,
+  "baseline_local_auc": 0.8174909942141402,
+  "delta": 2.8478917831420425e-05,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.814616121023005,
+      0.8206054413167798
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8145865873050581,
+      0.8205605375617872
+    ],
+    "paired_delta_95_percentile_interval": [
+      -2.7891036638058585e-05,
+      6.726839566804922e-05
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "reason": "Gain includes zero under paired event bootstrap; raw predictions are essentially unchanged on both cutoffs.",
+  "new_submission_created": false,
+  "official_candidate_auc": null,
+  "retained_submission": "./submission_techarena_20261102_v8.csv",
+  "reproduce_command": "python3 arena/run_v10_checks.py",
+  "code_and_model_sha256": {
+    "arena/history_model_v3.py": "00f3f476267843f2854104f3b5e7d400056e89b4dd82dde203b14cdfcd5ac17d",
+    "arena/test_time_history_v10.py": "a3fe7f10176c040c2e6bbf9bac7f29acc52b1d1de4aa23972e299583100a26a7",
+    "arena/run_v10_checks.py": "a74e22b8c6225a35cf35e943996230b76cb3bc005adc03a43c3f4919b407076f",
+    "arena_runs/v10_historybucket_d32_day25_s42/model.pt": "fd74c52630652220612de0f28c06ec92b5aaff94d0449c3e02204a0099e66f14",
+    "arena_runs/v10_historybucket_d32_day26_s42/model.pt": "3c7de129e11171bf673db355da368701892c97c47dc9907c01b9b95ef881c1e6",
+    "arena_runs/v10_cal_historybucket/model.txt": "980978badf59055243d331660a593857d3cb67737b77c2fc94078d6e7b0f546b",
+    "arena_runs/v10_event_historybucket/event_model.txt": "a64c8e3da14b16657f9956076e43c74be3428a843248b8eb1ece1acc9b1fbcf3"
+  }
+}
