@@ -1,0 +1,122 @@
+{
+  "cutoff_day": 26,
+  "candidate_path": "./arena_runs/v13_event_aux2/valid_half_corrected.npy",
+  "baseline_path": "./arena_runs/v8_event_bucket/valid_half_corrected.npy",
+  "events_path": "./arena_runs/v13_event_aux2/valid_events.npy",
+  "fitting_events": 588873,
+  "candidate": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.818688860115186,
+    "binary_row_logloss": 0.19236714326619914,
+    "event_click_auc_using_probability_sum": 0.6752127589258234,
+    "clicked_event_row_auc": 0.8217962688416242,
+    "clicked_event_top1_accuracy": 0.3957154405820534,
+    "event_prediction_sum_min": 0.1715385913970212,
+    "event_prediction_sum_max": 0.981767682625316
+  },
+  "baseline": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.8174909942141402,
+    "binary_row_logloss": 0.19279546950341603,
+    "event_click_auc_using_probability_sum": 0.6748357979962817,
+    "clicked_event_row_auc": 0.8205373393844647,
+    "clicked_event_top1_accuracy": 0.3928860145513339,
+    "event_prediction_sum_min": 0.1722106558371828,
+    "event_prediction_sum_max": 0.9799720825847197
+  },
+  "global_auc_delta": 0.0011978659010458692,
+  "subgroups": {
+    "history_0_5": {
+      "rows": 34560,
+      "clicked_rows": 1985,
+      "candidate_auc": 0.7418705680168416,
+      "baseline_auc": 0.7414952898851904,
+      "auc_delta": 0.00037527813165116886,
+      "events": 3456
+    },
+    "history_6_15": {
+      "rows": 103340,
+      "clicked_rows": 6281,
+      "candidate_auc": 0.801408229925241,
+      "baseline_auc": 0.8011157201928361,
+      "auc_delta": 0.00029250973240491085,
+      "events": 10334
+    },
+    "history_16_20": {
+      "rows": 213480,
+      "clicked_rows": 14000,
+      "candidate_auc": 0.8356182438626141,
+      "baseline_auc": 0.8339375898765362,
+      "auc_delta": 0.0016806539860778624,
+      "events": 21348
+    },
+    "unseen_fitting_user": {
+      "rows": 5950,
+      "clicked_rows": 380,
+      "candidate_auc": 0.7062846073892091,
+      "baseline_auc": 0.7123259000283473,
+      "auc_delta": -0.006041292639138218,
+      "events": 595
+    },
+    "seen_fitting_user": {
+      "rows": 345430,
+      "clicked_rows": 21886,
+      "candidate_auc": 0.8204160262929598,
+      "baseline_auc": 0.8191888910097693,
+      "auc_delta": 0.001227135283190517,
+      "events": 34543
+    },
+    "item_fit_impressions_0_20": {
+      "rows": 0,
+      "clicked_rows": 0,
+      "candidate_auc": null,
+      "baseline_auc": null,
+      "auc_delta": null
+    },
+    "item_fit_impressions_21_100": {
+      "rows": 119540,
+      "clicked_rows": 6937,
+      "candidate_auc": 0.7943407029359532,
+      "baseline_auc": 0.7933103660142153,
+      "auc_delta": 0.0010303369217378178
+    },
+    "item_fit_impressions_above_100": {
+      "rows": 231840,
+      "clicked_rows": 15329,
+      "candidate_auc": 0.8293638510944155,
+      "baseline_auc": 0.828115846756984,
+      "auc_delta": 0.001248004337431441
+    }
+  },
+  "notes": [
+    "Metrics are local validation diagnostics, not official leaderboard scores.",
+    "All comparisons use identical ordered events, one event per validation user.",
+    "Subgroup AUCs are not causal comparisons and need not average to global AUC.",
+    "Probability-sum event AUC is a ranking diagnostic; sums may exceed one after calibration."
+  ],
+  "candidate_sha256": "cce5803f7b1d6a393e4c6c7b73c8756b618731668d82837f0b036c6a9f626104",
+  "baseline_sha256": "5dad19979b9d61c850dc1fa8bc625dd5c3323ea4901cec5a7bc08d4aa1c1ca47",
+  "events_sha256": "13be45617299f2ef2d6f2558c8d8284a4a7a7aa1721ac26bec35d1f361f15348",
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8157762523219431,
+      0.8216616045456189
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8145865873050581,
+      0.8205605375617872
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0008731893659101209,
+      0.0015237237732614042
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  }
+}
