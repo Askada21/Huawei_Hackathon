@@ -1,0 +1,18 @@
+{
+  "day": 26,
+  "dim": 32,
+  "epochs": 12,
+  "pretrain": 0,
+  "seed": 42,
+  "lr": 0.008,
+  "reg": 1.0,
+  "no_history": false,
+  "objective": "binary",
+  "tag": "binary_factor",
+  "full": false,
+  "svd_init": true,
+  "cosine": false,
+  "anchor": 0,
+  "als_init": false,
+  "svd_iters": 25
+}
