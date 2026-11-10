@@ -1,0 +1,211 @@
+{
+  "name": "v16_selected_solution",
+  "recorded_utc": "2026-11-02T19:25:43.093558+00:00",
+  "local_auc": 0.8202805896067726,
+  "previous_v14_local_auc": 0.8194028105304779,
+  "delta": 0.0008777790762947157,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8173530059540971,
+      0.8232972326006248
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8164689210616121,
+      0.8223108115962277
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0006489598959315779,
+      0.0011015031762961177
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "official_v16_auc": null,
+  "last_known_official_v3_auc": 0.808665,
+  "submission": {
+    "file": "./submission_techarena_20261102_v16.csv",
+    "rows": 529390,
+    "min_probability": 0.000359970347,
+    "max_probability": 0.7605388595,
+    "mean_probability": 0.05591438034526092,
+    "sha256": "84b82cd4d56470b12f646a12b8a8fa06ac8bf3da729b7e6fb196435b7082abdd",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "./arena_runs/v16_final_combiner/evaluation_final.npy"
+    ]
+  },
+  "uploaded": false,
+  "method": "V14 with profile confidence n_impressions/(n_impressions+20), scaling user terms and interpolating known/cold history scales",
+  "factor_epochs": 2,
+  "row_combiner_rounds": 500,
+  "row_rounds_hit_predefined_ceiling": true,
+  "event_combiner_rounds": 471,
+  "raw_confirmations": [
+    {
+      "cutoff_day": 24,
+      "candidate": {
+        "events": 47928,
+        "rows": 479280,
+        "clicked_rows": 30157,
+        "global_row_auc": 0.7403785428438141,
+        "binary_row_logloss": 0.2716401517391205,
+        "event_click_auc_using_probability_sum": 0.6034537078998279,
+        "clicked_event_row_auc": 0.7476870091030198,
+        "clicked_event_top1_accuracy": 0.3052690917531585,
+        "event_prediction_sum_min": 0.010492962785065174,
+        "event_prediction_sum_max": 0.9999996423721313
+      },
+      "baseline": {
+        "events": 47928,
+        "rows": 479280,
+        "clicked_rows": 30157,
+        "global_row_auc": 0.7377589749146505,
+        "binary_row_logloss": 0.2713230550289154,
+        "event_click_auc_using_probability_sum": 0.6060908829932239,
+        "clicked_event_row_auc": 0.7445481955145722,
+        "clicked_event_top1_accuracy": 0.2995324468614252,
+        "event_prediction_sum_min": 0.010523390956223011,
+        "event_prediction_sum_max": 0.999996542930603
+      },
+      "global_auc_delta": 0.0026195679291636242
+    },
+    {
+      "cutoff_day": 25,
+      "candidate": {
+        "events": 43964,
+        "rows": 439640,
+        "clicked_rows": 27851,
+        "global_row_auc": 0.7785878145410065,
+        "binary_row_logloss": 0.22571496665477753,
+        "event_click_auc_using_probability_sum": 0.6296367433794917,
+        "clicked_event_row_auc": 0.7878839833908564,
+        "clicked_event_top1_accuracy": 0.3458403647983914,
+        "event_prediction_sum_min": 0.07446549832820892,
+        "event_prediction_sum_max": 0.9999700784683228
+      },
+      "baseline": {
+        "events": 43964,
+        "rows": 439640,
+        "clicked_rows": 27851,
+        "global_row_auc": 0.7752369666027659,
+        "binary_row_logloss": 0.23624688386917114,
+        "event_click_auc_using_probability_sum": 0.6301141522170793,
+        "clicked_event_row_auc": 0.7844710700247375,
+        "clicked_event_top1_accuracy": 0.34077770995655454,
+        "event_prediction_sum_min": 0.055664077401161194,
+        "event_prediction_sum_max": 0.999962329864502
+      },
+      "global_auc_delta": 0.0033508479382405865
+    },
+    {
+      "cutoff_day": 26,
+      "candidate": {
+        "events": 35138,
+        "rows": 351380,
+        "clicked_rows": 22266,
+        "global_row_auc": 0.8171197512317327,
+        "binary_row_logloss": 0.19837799668312073,
+        "event_click_auc_using_probability_sum": 0.6538026533890449,
+        "clicked_event_row_auc": 0.8233953427968945,
+        "clicked_event_top1_accuracy": 0.3970627863109674,
+        "event_prediction_sum_min": 0.0459098182618618,
+        "event_prediction_sum_max": 0.9919473528862
+      },
+      "baseline": {
+        "events": 35138,
+        "rows": 351380,
+        "clicked_rows": 22266,
+        "global_row_auc": 0.8161383882198382,
+        "binary_row_logloss": 0.1993655413389206,
+        "event_click_auc_using_probability_sum": 0.657388269185218,
+        "clicked_event_row_auc": 0.8220801423782055,
+        "clicked_event_top1_accuracy": 0.39576035210635047,
+        "event_prediction_sum_min": 0.030940912663936615,
+        "event_prediction_sum_max": 0.9871147871017456
+      },
+      "global_auc_delta": 0.0009813630118945538
+    }
+  ],
+  "subgroups": {
+    "history_0_5": {
+      "rows": 34560,
+      "clicked_rows": 1985,
+      "candidate_auc": 0.748497646392456,
+      "baseline_auc": 0.7467804697935977,
+      "auc_delta": 0.0017171765988582832,
+      "events": 3456
+    },
+    "history_6_15": {
+      "rows": 103340,
+      "clicked_rows": 6281,
+      "candidate_auc": 0.8033792529586331,
+      "baseline_auc": 0.8024142244391471,
+      "auc_delta": 0.0009650285194859887,
+      "events": 10334
+    },
+    "history_16_20": {
+      "rows": 213480,
+      "clicked_rows": 14000,
+      "candidate_auc": 0.836276868071271,
+      "baseline_auc": 0.8358437748861326,
+      "auc_delta": 0.0004330931851384001,
+      "events": 21348
+    },
+    "unseen_fitting_user": {
+      "rows": 5950,
+      "clicked_rows": 380,
+      "candidate_auc": 0.7313323254275725,
+      "baseline_auc": 0.7313715392610791,
+      "auc_delta": -3.9213833506579476e-05,
+      "events": 595
+    },
+    "seen_fitting_user": {
+      "rows": 345430,
+      "clicked_rows": 21886,
+      "candidate_auc": 0.8215802799607074,
+      "baseline_auc": 0.8207008459624562,
+      "auc_delta": 0.000879433998251189,
+      "events": 34543
+    },
+    "item_fit_impressions_0_20": {
+      "rows": 0,
+      "clicked_rows": 0,
+      "candidate_auc": null,
+      "baseline_auc": null,
+      "auc_delta": null
+    },
+    "item_fit_impressions_21_100": {
+      "rows": 119540,
+      "clicked_rows": 6937,
+      "candidate_auc": 0.7956504041568728,
+      "baseline_auc": 0.7947143079910727,
+      "auc_delta": 0.0009360961658001488
+    },
+    "item_fit_impressions_above_100": {
+      "rows": 231840,
+      "clicked_rows": 15329,
+      "candidate_auc": 0.8309483075603585,
+      "baseline_auc": 0.8301816781925984,
+      "auc_delta": 0.0007666293677601743
+    }
+  },
+  "exposure_diagnostics": "./arena_runs/v16_exposure_diagnostics.json",
+  "inference_audit": "./arena_runs/v16_inference_audit.json",
+  "limitation": "Retrospective model selection; bootstrap excludes search bias and evaluation shift. Cold subgroup has a small numerical decline; official/private results unknown.",
+  "code_and_model_sha256": {
+    "arena/history_model_v3.py": "0016907ddd15260898c23ff7124df0c19861de79856529298935b7b6bd086c3c",
+    "arena/run_v16_checks.py": "6a3535c1c2cdd5edd465e565da72d8b02236fbcce4c8966c3274f54be3661d1d",
+    "arena/test_profile_shrinkage_v16.py": "81cfe9797e19bcb0d0091c267fc5193c39c4b760fd77c3780335e0fe78984f2e",
+    "arena_runs/v16_confidence_final_d32_day26_s42_full/model.pt": "44129943343ac1623dc3540badeb96094711702bda6261c5f6a870fe32f421c4",
+    "arena_runs/v16_cal_confidence/model.txt": "58d3182b6d3a96211e5a415ed4a71221f11bfa6f2c9cc34c42dcf9a8267120fa",
+    "arena_runs/v16_event_confidence/event_model.txt": "91746e3b6a4bfce40b628e116c6135b19b8b13b10fbad505617b253d3979803c"
+  },
+  "reproduce_command": "python3 arena/run_v16_checks.py --broad --full"
+}
