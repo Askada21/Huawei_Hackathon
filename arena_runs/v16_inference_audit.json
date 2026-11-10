@@ -1,0 +1,20 @@
+{
+  "v14_coldpath_d32_day26_s42": {
+    "events": 107,
+    "cold_events": 31,
+    "one_or_two_fit_event_profiles": 36,
+    "maximum_absolute_difference_from_saved": 0.0,
+    "repeat_predictions_exactly_equal": true,
+    "history_scale": 0.2288592904806137,
+    "cold_history_scale": 0.9044288992881775
+  },
+  "v16_confidence_d32_day26_s42": {
+    "events": 107,
+    "cold_events": 31,
+    "one_or_two_fit_event_profiles": 36,
+    "maximum_absolute_difference_from_saved": 0.0,
+    "repeat_predictions_exactly_equal": true,
+    "history_scale": 0.2170041799545288,
+    "cold_history_scale": 0.8889965415000916
+  }
+}
