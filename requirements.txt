@@ -1,0 +1,8 @@
+# Python 3.12 was used locally. Exact historical environments were not locked.
+numpy
+scipy
+scikit-learn
+pandas
+lightgbm
+torch
+implicit
