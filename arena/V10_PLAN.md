@@ -1,0 +1,5 @@
+# V10 hypothesis: contextual historical clicks
+
+V8 transforms the pooled preference using the current time bucket, but discards individual historical click buckets. Add 16 regularized learned weights (current bucket × historical bucket), initially all one, and L2-normalize their masked sum to preserve the existing history scale. No new random draws, statistics or evaluation inputs enter fitting. Keep all V8 objectives, rank and mixture weights fixed. Do not combine with the rejected V9 gates.
+
+Compare January 26 and January 25 raw factors, selecting the earlier checkpoint strictly before January 26. If useful, fit the same row/event pipeline with actual January 25 OOT events only and compare against V8 with whole-event bootstrap. A credible improvement is required before full refit/submission generation; no platform upload is authorized. Tests check neutral initialization, padding/empty histories, time sensitivity and finite gradients. These are retrospective model-selection comparisons, not an untouched test.
