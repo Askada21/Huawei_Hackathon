@@ -1,0 +1,8 @@
+Training until validation scores don't improve for 40 rounds
+[50]	valid_0's auc: 0.60732
+[100]	valid_0's auc: 0.608178
+[150]	valid_0's auc: 0.608374
+[200]	valid_0's auc: 0.608452
+Early stopping, best iteration is:
+[207]	valid_0's auc: 0.608485
+{"name": "ordered_tree", "day": 26, "auc": 0.6084845853783508, "logloss": 0.22712745173810728, "recorded_utc": "2026-11-01T21:49:22.957154+00:00", "seconds": 44.11656403541565, "artifact": "./arena_runs/tree_day26"}
