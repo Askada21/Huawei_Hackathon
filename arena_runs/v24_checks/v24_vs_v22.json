@@ -1,0 +1,122 @@
+{
+  "cutoff_day": 26,
+  "candidate_path": "./arena_runs/v24_checks/v24_event_confidence/ensemble_valid.npy",
+  "baseline_path": "./arena_runs/v22_checks/v22_event_confidence/ensemble_valid.npy",
+  "events_path": "./arena_runs/v24_checks/v24_event_confidence/valid_events.npy",
+  "fitting_events": 588873,
+  "candidate": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.8212013180215934,
+    "binary_row_logloss": 0.19185148260863116,
+    "event_click_auc_using_probability_sum": 0.6788791819704989,
+    "clicked_event_row_auc": 0.8239615160146547,
+    "clicked_event_top1_accuracy": 0.39971256624449836,
+    "event_prediction_sum_min": 0.15725805281749772,
+    "event_prediction_sum_max": 0.9666086158566799
+  },
+  "baseline": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.8210200122746831,
+    "binary_row_logloss": 0.1918909252941184,
+    "event_click_auc_using_probability_sum": 0.6786503362614307,
+    "clicked_event_row_auc": 0.8237898159542436,
+    "clicked_event_top1_accuracy": 0.39930836252582413,
+    "event_prediction_sum_min": 0.16034798012509882,
+    "event_prediction_sum_max": 0.9772428318529381
+  },
+  "global_auc_delta": 0.00018130574691022083,
+  "subgroups": {
+    "history_0_5": {
+      "rows": 34560,
+      "clicked_rows": 1985,
+      "candidate_auc": 0.7489216243855006,
+      "baseline_auc": 0.7486151044576457,
+      "auc_delta": 0.0003065199278549091,
+      "events": 3456
+    },
+    "history_6_15": {
+      "rows": 103340,
+      "clicked_rows": 6281,
+      "candidate_auc": 0.8043861168557797,
+      "baseline_auc": 0.8042028902370245,
+      "auc_delta": 0.00018322661875513901,
+      "events": 10334
+    },
+    "history_16_20": {
+      "rows": 213480,
+      "clicked_rows": 14000,
+      "candidate_auc": 0.8371579839726145,
+      "baseline_auc": 0.8369813941247242,
+      "auc_delta": 0.0001765898478903738,
+      "events": 21348
+    },
+    "unseen_fitting_user": {
+      "rows": 5950,
+      "clicked_rows": 380,
+      "candidate_auc": 0.732874421241614,
+      "baseline_auc": 0.7333275063781537,
+      "auc_delta": -0.0004530851365397437,
+      "events": 595
+    },
+    "seen_fitting_user": {
+      "rows": 345430,
+      "clicked_rows": 21886,
+      "candidate_auc": 0.8224961462340991,
+      "baseline_auc": 0.8223054668122687,
+      "auc_delta": 0.00019067942183037534,
+      "events": 34543
+    },
+    "item_fit_impressions_0_20": {
+      "rows": 0,
+      "clicked_rows": 0,
+      "candidate_auc": null,
+      "baseline_auc": null,
+      "auc_delta": null
+    },
+    "item_fit_impressions_21_100": {
+      "rows": 119540,
+      "clicked_rows": 6937,
+      "candidate_auc": 0.7968710865639237,
+      "baseline_auc": 0.7965065530168947,
+      "auc_delta": 0.0003645335470290334
+    },
+    "item_fit_impressions_above_100": {
+      "rows": 231840,
+      "clicked_rows": 15329,
+      "candidate_auc": 0.8317799039916549,
+      "baseline_auc": 0.8316767299589197,
+      "auc_delta": 0.0001031740327351871
+    }
+  },
+  "notes": [
+    "Metrics are local validation diagnostics, not official leaderboard scores.",
+    "All comparisons use identical ordered events, one event per validation user.",
+    "Subgroup AUCs are not causal comparisons and need not average to global AUC.",
+    "Probability-sum event AUC is a ranking diagnostic; sums may exceed one after calibration."
+  ],
+  "candidate_sha256": "78352a53b15018ca906ab4c8931941ef4cfa7227f1d26a3ee1dfedb81c42cd15",
+  "baseline_sha256": "16fccc0f0d2124abec4dcaf02611302f4ee5a950fbbf9cd8c07d1870b6d86ee2",
+  "events_sha256": "13be45617299f2ef2d6f2558c8d8284a4a7a7aa1721ac26bec35d1f361f15348",
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8184071794983098,
+      0.8241895595376633
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8181775560482487,
+      0.8239833820781594
+    ],
+    "paired_delta_95_percentile_interval": [
+      5.4799408029496124e-05,
+      0.00031337203769713504
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  }
+}
