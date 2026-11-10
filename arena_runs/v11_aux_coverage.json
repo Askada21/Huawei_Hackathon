@@ -1,0 +1,14 @@
+[
+  {
+    "cutoff_day": 25,
+    "distinct_fitting_clicks": 881345,
+    "with_same_user_bucket_controls": 802242,
+    "eligible_fraction": 0.9102474059534008
+  },
+  {
+    "cutoff_day": 26,
+    "distinct_fitting_clicks": 946227,
+    "with_same_user_bucket_controls": 881618,
+    "eligible_fraction": 0.9317193443011033
+  }
+]
