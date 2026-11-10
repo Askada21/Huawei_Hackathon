@@ -1,0 +1,11 @@
+{
+  "raw": "./arena_runs/v13_aux2_controlled_d32_day26_s42/valid_pred.npy",
+  "combined": "./arena_runs/v13_cal_aux2/valid_pred.npy",
+  "raw_events": "./arena_runs/v13_aux2_controlled_d32_day26_s42/valid_events.npy",
+  "combined_events": "./arena_runs/v13_cal_aux2/valid_events.npy",
+  "out": "./arena_runs/v13_cal_aux2/valid_blend.npy",
+  "raw_weight": 0.25,
+  "events": 35138,
+  "probabilities_finite_in_range": true,
+  "events_sha256": "877de6e94f69140a0889fe12fb8c7364b8fd5119773f3d2295352e03d69054af"
+}
