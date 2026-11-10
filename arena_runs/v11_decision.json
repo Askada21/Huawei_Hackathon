@@ -1,0 +1,33 @@
+{
+  "name": "v11_contextaux_decision",
+  "recorded_utc": "2026-11-02T18:46:16.605035+00:00",
+  "decision": "retain_v8",
+  "raw_comparisons": [
+    {
+      "day": 25,
+      "candidate_auc": 0.7566877263982547,
+      "v8_auc": 0.7624680071321331,
+      "delta": -0.0057802807338784845
+    },
+    {
+      "day": 26,
+      "candidate_auc": 0.8102798535639932,
+      "v8_auc": 0.8142925898546026,
+      "delta": -0.004012736290609387
+    }
+  ],
+  "new_submission_created": false,
+  "reason": "Both raw temporal comparisons decline. Earlier candidate is budget-limited at 12 epochs, not claimed converged.",
+  "selected_local_pipeline_auc": 0.8174909942141402,
+  "official_v8_auc": null,
+  "retained_submission": "./submission_techarena_20261102_v8.csv",
+  "reproduce_command": "python3 arena/run_v11_checks.py",
+  "code_and_model_sha256": {
+    "arena/history_model_v3.py": "66bd6e40e5f3615fb183021e4d973114c85edb6e18d41089b68e7d265cbd90fb",
+    "arena/preference_sampling_v5.py": "2290b599a72569b93d77a8e5cd1cca82e097c8941a8bf824a8217360122e003f",
+    "arena/test_contextual_aux_v11.py": "74755abe9c2b5a42da45923c8c410aae447a1be40ba6433c3be8b25af5fd86ee",
+    "arena/run_v11_checks.py": "f6de2e21391f33c2f14d7aa1a06efa78fa9f298790580aef06aa0747f7b5a7ed",
+    "arena_runs/v11_contextaux_d32_day25_s42/model.pt": "81dba3a50bea7c3cb267d7db1df395b3b829ff874bff9e2391283106c218cfbd",
+    "arena_runs/v11_contextaux_d32_day26_s42/model.pt": "8ecfebb4e4aba1d7dfc84bd6e2f6ae9bb68efe265490b5c1be744e0677f18e26"
+  }
+}
