@@ -1,0 +1,16 @@
+{
+  "day": 25,
+  "dim": 32,
+  "epochs": 12,
+  "pretrain": 0,
+  "seed": 42,
+  "lr": 0.008,
+  "reg": 1.0,
+  "no_history": false,
+  "objective": "softmax",
+  "tag": "regularized_factor",
+  "full": false,
+  "svd_init": true,
+  "cosine": false,
+  "anchor": 0
+}
