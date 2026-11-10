@@ -1,0 +1,4 @@
+{"name": "joint_factor_d32_day26_s42_frozen_calibration", "day": 26, "auc": 0.8089944032037183, "logloss": 0.19739369520455713, "recorded_utc": "2026-11-01T22:00:51.190771+00:00"}
+{"name": "joint_factor_d32_day26_s42_blend0.25", "day": 26, "auc": 0.8086322137183474, "logloss": 0.19756397704595588, "recorded_utc": "2026-11-01T22:00:51.299797+00:00"}
+{"name": "joint_factor_d32_day26_s42_blend0.5", "day": 26, "auc": 0.8088796453577288, "logloss": 0.19748446308007495, "recorded_utc": "2026-11-01T22:00:51.441498+00:00"}
+{"name": "joint_factor_d32_day26_s42_blend0.75", "day": 26, "auc": 0.8090014606724306, "logloss": 0.19742757507000286, "recorded_utc": "2026-11-01T22:00:51.539577+00:00"}
