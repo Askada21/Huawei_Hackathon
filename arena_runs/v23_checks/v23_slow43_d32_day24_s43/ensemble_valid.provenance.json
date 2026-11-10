@@ -1,0 +1,11 @@
+{
+  "raw": "./arena_runs/v23_checks/v23_slow43_d32_day24_s43/valid_pred.npy",
+  "combined": "./arena_runs/v19_checks/v19_shrink40_d32_day24_s42/valid_pred.npy",
+  "raw_events": "./arena_runs/v23_checks/v23_slow43_d32_day24_s43/valid_events.npy",
+  "combined_events": "./arena_runs/v19_checks/v19_shrink40_d32_day24_s42/valid_events.npy",
+  "out": "./arena_runs/v23_checks/v23_slow43_d32_day24_s43/ensemble_valid.npy",
+  "raw_weight": 0.5,
+  "events": 47928,
+  "probabilities_finite_in_range": true,
+  "events_sha256": "72e8736dd17b53620ed8e6e728e5c9ee91dae465eba02dc11757ecd4adda415b"
+}
