@@ -1,0 +1,2 @@
+{"name": "stable_frozen_d32_day26_s42_clean", "day": 26, "auc": 0.7994463914802146, "logloss": 0.20164306103901297, "recorded_utc": "2026-11-01T22:16:01.781034+00:00"}
+{"name": "stable_frozen_d32_day26_s42_blend_half", "day": 26, "auc": 0.8072275853744301, "logloss": 0.19902641005547633, "recorded_utc": "2026-11-01T22:16:01.852385+00:00"}

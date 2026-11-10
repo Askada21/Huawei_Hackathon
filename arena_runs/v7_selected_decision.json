@@ -1,0 +1,30 @@
+{
+  "recommended_submission": "submission_techarena_20261102_v5.csv",
+  "incumbent_local_auc": 0.816668554262359,
+  "candidate_local_auc": 0.8167030664340547,
+  "delta": 3.4512171695699756e-05,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8137710587441249,
+      0.8198676435321332
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8137145624988789,
+      0.8197994892932786
+    ],
+    "paired_delta_95_percentile_interval": [
+      -2.1623497463602036e-05,
+      0.00012003361171518679
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "decision": "Retain V5: conditional adaptation and its half blend declined; sparse-graph addition has no reliable improvement",
+  "new_submission": null,
+  "uploaded": false,
+  "official_v5_score": null,
+  "last_known_official_v3_score": 0.808665,
+  "reproduce_command": "python3 arena/run_v7_checks.py"
+}

@@ -1,0 +1,76 @@
+{
+  "selected_local_auc": 0.816668554262359,
+  "incumbent_local_auc": 0.8151557921381457,
+  "delta": 0.0015127621242132516,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8137145624988789,
+      0.8197994892932786
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8122562775768568,
+      0.8183257911003303
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0011663847980522529,
+      0.0018524477391160948
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "official_public_v3_auc": 0.808665,
+  "official_public_v5_auc": null,
+  "recommended_candidate": "./submission_techarena_20261102_v5.csv",
+  "submission": {
+    "file": "./submission_techarena_20261102_v5.csv",
+    "rows": 529390,
+    "min_probability": 0.0004076604557,
+    "max_probability": 0.7659641782,
+    "mean_probability": 0.059699537040582805,
+    "sha256": "8a2545d423b605cec4dcd9fe7d4007315e6ffd86067cd2e9383104ff677d4567",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "arena_runs/v5_final_combiner/evaluation_final.npy"
+    ]
+  },
+  "uploaded": false,
+  "method": "gradient-matched within-event pairwise loss with no-click winner; historical positives vs real same-user nonclicked fitting impressions",
+  "fitting_rows": 6868240,
+  "factor_epochs": 2,
+  "row_rounds": 430,
+  "event_rounds": 500,
+  "raw_logit_blend_weight": 0.25,
+  "event_correction_weight": 0.5,
+  "confirmations": [
+    {
+      "cutoff": 25,
+      "candidate_raw_auc": 0.7613323064640621,
+      "reference_raw_auc": 0.7527149807331082,
+      "events": 43964
+    },
+    {
+      "cutoff": 24,
+      "candidate_raw_auc": 0.7244765204467419,
+      "reference_raw_auc": 0.7101256216609094,
+      "events": 47928
+    }
+  ],
+  "validation_role": "retrospective model selection and causal temporal backtests, not untouched official test",
+  "sha256": {
+    "arena/history_model_v3.py": "eb33a3a3dfbb30b61dc975d18c6e26a94a3aafdda29a8d9df797f007d4c705b5",
+    "arena/objectives_v5.py": "a0fbbf1d929de67ca7ebf2c24ac0f0622e0ff1c44730601a4778aa1117a5e4bd",
+    "arena/preference_sampling_v5.py": "0568c5edf6df6d59035b76ff8b0c2b787475b27c7a033b99d07a17fba3b3e2f0",
+    "arena/run_v5.py": "d521286e440f183d27f069ede5b6e2c5aa222ccde4b266cffeb27a02ea2d1084",
+    "arena_runs/v5_observed_final_d32_day26_s42_full/model.pt": "3fba6984cb40aad6660f42610e92c5c164fff8b98d0fd618b0eafa697c0fb008",
+    "arena_runs/v5_cal_observed/model.txt": "0e4993e34a73ae35596de6092a93535b40cf50e63199d676efc7d88048b8b298",
+    "arena_runs/v5_event_observed/event_model.txt": "dfee0ad679048a84f7d8c024ef52f060473ec99d289b579dc8d34b0c481e128a"
+  },
+  "reproduce_command": "python3 arena/run_v5.py --broad"
+}

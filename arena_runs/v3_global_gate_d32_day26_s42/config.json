@@ -1,0 +1,22 @@
+{
+  "day": 26,
+  "dim": 32,
+  "epochs": 10,
+  "seed": 42,
+  "lr": 0.0024,
+  "reg": 1.0,
+  "aux": 0.5,
+  "anchor": 0.0,
+  "mode": "baseline",
+  "half_life": 24.0,
+  "separate_history": false,
+  "train_history": false,
+  "gates": true,
+  "freeze_item": false,
+  "gate_mode": "global",
+  "tag": "v3_global_gate",
+  "full": false,
+  "selection_end_day": null,
+  "export": null,
+  "threads": 2
+}

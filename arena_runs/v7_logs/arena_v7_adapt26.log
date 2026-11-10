@@ -1,0 +1,7 @@
+users 10000 seconds 7.5
+users 20000 seconds 13.1
+users 30000 seconds 18.4
+users 40000 seconds 23.6
+users 50000 seconds 28.7
+{"name": "v7_adapt26", "day": 26, "auc": 0.8050556354078785, "logloss": 0.21112424991009496, "recorded_utc": "2026-11-02T10:17:28.665324+00:00", "seconds": 30.0900559425354}
+{"name": "v7_adapt26_unadapted", "day": 26, "auc": 0.8130801623080769, "logloss": 0.2005964924774483, "recorded_utc": "2026-11-02T10:17:28.737108+00:00"}

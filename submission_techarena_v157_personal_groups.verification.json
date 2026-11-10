@@ -1,0 +1,17 @@
+{
+  "file": "./submission_techarena_v157_personal_groups.csv",
+  "rows": 529390,
+  "min_probability": 0.0003594793883,
+  "max_probability": 0.8055665982,
+  "mean_probability": 0.05774579245492295,
+  "sha256": "8d6b8487f1f13e9e106c404a66a72857cde38d4c992e5ad1bcabd072709dff42",
+  "header": [
+    "rowid",
+    "predicted_probability"
+  ],
+  "rowids_exactly_match_evaluation": true,
+  "all_values_finite_and_in_range": true,
+  "prediction_sources": [
+    "arena_runs/v157_evaluation.npy"
+  ]
+}

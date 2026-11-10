@@ -1,0 +1,71 @@
+{
+  "local_auc": 0.8174909942141402,
+  "previous_v5_local_auc": 0.816668554262359,
+  "delta": 0.0008224399517812175,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8145865873050581,
+      0.8205605375617872
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8137145624988789,
+      0.8197994892932786
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0005216627532191348,
+      0.0010520884075701927
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "official_v8_auc": null,
+  "last_known_official_v3_auc": 0.808665,
+  "submission": {
+    "file": "./submission_techarena_20261102_v8.csv",
+    "rows": 529390,
+    "min_probability": 0.000531236682,
+    "max_probability": 0.7747474806,
+    "mean_probability": 0.05845114066545475,
+    "sha256": "bc499aa49947752db8fd24dcc34601bc99f0ef6933e4bf3de3ccf9dd68af4dd8",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "arena_runs/v8_final_combiner/evaluation_final.npy"
+    ]
+  },
+  "uploaded": false,
+  "method": "rank4 shared six-hour-bucket preference residual, with V5 observed-impression pairwise supervision",
+  "context_parameters": 1024,
+  "factor_epochs": 2,
+  "row_combiner_rounds": 325,
+  "event_combiner_rounds": 398,
+  "confirmations": [
+    {
+      "day": 25,
+      "candidate_raw_auc": 0.7624680071321331,
+      "baseline_raw_auc": 0.7613323064640621
+    },
+    {
+      "day": 24,
+      "candidate_raw_auc": 0.7289144943207132,
+      "baseline_raw_auc": 0.7244765204467419
+    }
+  ],
+  "limitation": "Retrospective model selection; unseen-user subgroup declines; private-score and temporal-shift uncertainty remain",
+  "rejected": "weekday/weekend-specific residuals declined on earlier dates",
+  "code_and_model_sha256": {
+    "arena/history_model_v3.py": "e63b51c9a11b58f6e0e46285861ca8d30ceb13500bbfa5595a24901bd109357f",
+    "arena/run_v8.py": "feea15e242d5600ab6009f832d94bc261be57cdc441d916d49e8bb4fbc1bd43c",
+    "arena/test_context_v8.py": "8f7c5b7641aff0cb250c62549b4d923df2a44341522c83448444054ffeb79723",
+    "arena_runs/v8_bucket_final_d32_day26_s42_full/model.pt": "3136853f7c970e7122bc878d7ed30007dd380a45fa0ebe5111681147cc2323b8",
+    "arena_runs/v8_cal_bucket/model.txt": "33d87786e8dab02c2432c59f4a6220e030488fa4ef4dffda1908545997041298",
+    "arena_runs/v8_event_bucket/event_model.txt": "52fdeede9a2dd6dd06023dd9593579b345f760b38f54f40c31382c07c73601b0"
+  },
+  "reproduce_command": "python3 arena/run_v8.py --broad"
+}

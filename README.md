@@ -74,4 +74,4 @@ This import includes project source, experiment reports and lightweight executio
 
 Large models, prepared arrays, caches, databases, installed dependencies and temporary files are excluded. Files that were already tracked remotely, including the example submission, validation features and supplied starter, are preserved. Their presence does not establish redistribution rights. Official supplied material retains its original attribution; this publication adds no license grant for it.
 
-Each new or modified file is published in a separate commit using its actual publication date. These import commits record the publication process rather than the historical chronology of experiments.
+The initial files were imported with one commit per file. The remaining files were published together in a batch at the project owner's request. All commits use their actual publication dates and record the publication process rather than the historical chronology of experiments.

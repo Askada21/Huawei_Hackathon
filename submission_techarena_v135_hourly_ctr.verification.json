@@ -1,0 +1,17 @@
+{
+  "file": "./submission_techarena_v135_hourly_ctr.csv",
+  "rows": 529390,
+  "min_probability": 0.0003556717255,
+  "max_probability": 0.7968853573,
+  "mean_probability": 0.057682343922938736,
+  "sha256": "1e4869ae1ad6b4eb59813fca238ee19d2cdf637dedc1ca826c0c79a82d8ec95e",
+  "header": [
+    "rowid",
+    "predicted_probability"
+  ],
+  "rowids_exactly_match_evaluation": true,
+  "all_values_finite_and_in_range": true,
+  "prediction_sources": [
+    "arena_runs/v135_evaluation.npy"
+  ]
+}

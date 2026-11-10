@@ -1,0 +1,11 @@
+{
+  "raw": "./arena_runs/v32_checks/v32_final_combiner/evaluation_final.npy",
+  "combined": "./arena_runs/v31_verified/v31_final_combiner/ensemble_evaluation.npy",
+  "raw_events": "./arena_runs/v32_checks/v32_final_combiner/events.npy",
+  "combined_events": "./arena_runs/v31_verified/v31_final_combiner/events.npy",
+  "out": "./arena_runs/v32_checks/v32_final_combiner/ensemble_evaluation.npy",
+  "raw_weight": 0.16666666666666666,
+  "events": 52939,
+  "probabilities_finite_in_range": true,
+  "events_sha256": "a41b110083b13dcbcd930470124dc7fe0da3ef7ffc0cdf6a15a1a313b7d02abc"
+}

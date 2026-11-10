@@ -1,0 +1,18 @@
+Calibration training events strictly before test cutoff: 35230 excluded later events: 8734
+Training until validation scores don't improve for 35 rounds
+[50]	valid_0's auc: 0.767039
+[100]	valid_0's auc: 0.769536
+[150]	valid_0's auc: 0.770705
+[200]	valid_0's auc: 0.771168
+[250]	valid_0's auc: 0.771414
+[300]	valid_0's auc: 0.771574
+[350]	valid_0's auc: 0.771767
+[400]	valid_0's auc: 0.77179
+Early stopping, best iteration is:
+[372]	valid_0's auc: 0.771806
+{"name": "calibrator_inner_raw", "day": 25, "auc": 0.7590698831829504, "logloss": 0.25545600056648254, "recorded_utc": "2026-11-02T10:21:35.111636+00:00"}
+{"name": "calibrator_inner_tree", "day": 25, "auc": 0.7718063604883709, "logloss": 0.20384951969162582, "recorded_utc": "2026-11-02T10:21:35.246259+00:00", "iteration": 372}
+{"name": "v7_lift_combiner", "day": 26, "auc": 0.8141753644361669, "logloss": 0.19681410458371712, "recorded_utc": "2026-11-02T10:21:38.398061+00:00", "artifact": "./arena_runs/v7_lift_combiner"}
+{"name": "v7_lift_combiner_raw_weight0.25", "day": 26, "auc": 0.8161987489378631, "logloss": 0.19343449737568902, "recorded_utc": "2026-11-02T10:21:38.481867+00:00"}
+{"name": "v7_lift_combiner_raw_weight0.5", "day": 26, "auc": 0.8156973054659099, "logloss": 0.19326104351774978, "recorded_utc": "2026-11-02T10:21:38.562475+00:00"}
+{"name": "v7_lift_combiner_raw_weight0.75", "day": 26, "auc": 0.8144592681813935, "logloss": 0.19576412067097132, "recorded_utc": "2026-11-02T10:21:38.636716+00:00"}

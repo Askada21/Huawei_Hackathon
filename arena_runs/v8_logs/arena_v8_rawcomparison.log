@@ -1,0 +1,122 @@
+{
+  "cutoff_day": 26,
+  "candidate_path": "./arena_runs/v8_contextual_d32_day26_s42/valid_pred.npy",
+  "baseline_path": "./arena_runs/v5_observed_aux_d32_day26_s42/valid_pred.npy",
+  "events_path": "./arena_runs/v8_contextual_d32_day26_s42/valid_events.npy",
+  "fitting_events": 588873,
+  "candidate": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.8137630105300542,
+    "binary_row_logloss": 0.19980788230895996,
+    "event_click_auc_using_probability_sum": 0.6574457414217174,
+    "clicked_event_row_auc": 0.819686842941143,
+    "clicked_event_top1_accuracy": 0.3927961915027396,
+    "event_prediction_sum_min": 0.03189592808485031,
+    "event_prediction_sum_max": 0.9919676184654236
+  },
+  "baseline": {
+    "events": 35138,
+    "rows": 351380,
+    "clicked_rows": 22266,
+    "global_row_auc": 0.8130801612163816,
+    "binary_row_logloss": 0.20059648156166077,
+    "event_click_auc_using_probability_sum": 0.6566337070787205,
+    "clicked_event_row_auc": 0.8190957017316685,
+    "clicked_event_top1_accuracy": 0.3917632264439055,
+    "event_prediction_sum_min": 0.030636439099907875,
+    "event_prediction_sum_max": 0.9930591583251953
+  },
+  "global_auc_delta": 0.0006828493136725733,
+  "subgroups": {
+    "history_0_5": {
+      "rows": 34560,
+      "clicked_rows": 1985,
+      "candidate_auc": 0.7360461094432341,
+      "baseline_auc": 0.7354380803068291,
+      "auc_delta": 0.0006080291364050083,
+      "events": 3456
+    },
+    "history_6_15": {
+      "rows": 103340,
+      "clicked_rows": 6281,
+      "candidate_auc": 0.797000196902181,
+      "baseline_auc": 0.795971171113963,
+      "auc_delta": 0.0010290257882180631,
+      "events": 10334
+    },
+    "history_16_20": {
+      "rows": 213480,
+      "clicked_rows": 14000,
+      "candidate_auc": 0.8310053532040449,
+      "baseline_auc": 0.8304246995760407,
+      "auc_delta": 0.0005806536280041907,
+      "events": 21348
+    },
+    "unseen_fitting_user": {
+      "rows": 5950,
+      "clicked_rows": 380,
+      "candidate_auc": 0.7127763866578476,
+      "baseline_auc": 0.7137971274685817,
+      "auc_delta": -0.001020740810734111,
+      "events": 595
+    },
+    "seen_fitting_user": {
+      "rows": 345430,
+      "clicked_rows": 21886,
+      "candidate_auc": 0.8157624853839045,
+      "baseline_auc": 0.8150590069318403,
+      "auc_delta": 0.000703478452064199,
+      "events": 34543
+    },
+    "item_fit_impressions_0_20": {
+      "rows": 0,
+      "clicked_rows": 0,
+      "candidate_auc": null,
+      "baseline_auc": null,
+      "auc_delta": null
+    },
+    "item_fit_impressions_21_100": {
+      "rows": 119540,
+      "clicked_rows": 6937,
+      "candidate_auc": 0.7885150895134005,
+      "baseline_auc": 0.7880401936324796,
+      "auc_delta": 0.000474895880920978
+    },
+    "item_fit_impressions_above_100": {
+      "rows": 231840,
+      "clicked_rows": 15329,
+      "candidate_auc": 0.825338662297956,
+      "baseline_auc": 0.8245476331078764,
+      "auc_delta": 0.0007910291900796729
+    }
+  },
+  "notes": [
+    "Metrics are local validation diagnostics, not official leaderboard scores.",
+    "All comparisons use identical ordered events, one event per validation user.",
+    "Subgroup AUCs are not causal comparisons and need not average to global AUC.",
+    "Probability-sum event AUC is a ranking diagnostic; sums may exceed one after calibration."
+  ],
+  "candidate_sha256": "940e9812bc5e242a29b0b5d66481848f740c2bdc6d4cfe4f342a29e29879f4fa",
+  "baseline_sha256": "eb01359b9650efced35798b343b3f67788b64a6de50e3636f4aa606c607479ca",
+  "events_sha256": "13be45617299f2ef2d6f2558c8d8284a4a7a7aa1721ac26bec35d1f361f15348",
+  "bootstrap": {
+    "replicates": 100,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8105281795869091,
+      0.8166398632748685
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8098684012284751,
+      0.8159979431290234
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0004929358711258852,
+      0.0008048917408112449
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  }
+}

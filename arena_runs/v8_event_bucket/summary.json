@@ -1,0 +1,87 @@
+{
+  "training_events": 35230,
+  "excluded_late_events": 8734,
+  "test_events": 35138,
+  "inner_heldout_users": {
+    "raw_auc": 0.761723147214412,
+    "decomposed_auc": 0.7606312357022024,
+    "event_auc": 0.659724461031624,
+    "rounds": 398,
+    "clean_row_combiner_auc": 0.7714686537250927,
+    "clean_decomposition_auc": 0.7717595913670686,
+    "fixed_half_correction_auc": 0.7718208881314411,
+    "clean_row_combiner_rounds": 325,
+    "evidence_role": "model-selection evidence; not an untouched confirmation set because early-stopping rounds were chosen on these users",
+    "note": "All combiner and event fits exclude held-out user%5==0 labels; fixed half correction specified before this earlier-period comparison."
+  },
+  "test_results": {
+    "decomposed_raw_choice": {
+      "auc": 0.8134173171059361,
+      "logloss": 0.1984381048241434
+    },
+    "decomposed_clean_choice": {
+      "auc": 0.817242093698784,
+      "logloss": 0.19287466198489725
+    },
+    "baseline_clean_rows": {
+      "auc": 0.8170981535420597,
+      "logloss": 0.1929262971779965
+    },
+    "blend_event_weight_0.25": {
+      "auc": 0.8173806350130531,
+      "logloss": 0.1928333298159284
+    },
+    "blend_event_weight_0.5": {
+      "auc": 0.8174909942141402,
+      "logloss": 0.19279546950341603
+    },
+    "blend_event_weight_0.75": {
+      "auc": 0.8174411755196413,
+      "logloss": 0.19280980990317975
+    }
+  },
+  "event_auc": 0.6695582856682218,
+  "test_model": "v8_bucket_d32_day26_s42",
+  "test_cutoff": 26,
+  "fit_end_exclusive": 1737849600,
+  "seconds": 13.888705968856812,
+  "train_model": "v8_bucket_d32_day25_s42",
+  "training_feature_config": {
+    "day": 25,
+    "dim": 32,
+    "epochs": 12,
+    "seed": 42,
+    "lr": 0.0024,
+    "reg": 1.0,
+    "aux": 0.5,
+    "anchor": 0.0,
+    "mode": "baseline",
+    "half_life": 24.0,
+    "separate_history": false,
+    "train_history": false,
+    "gates": true,
+    "freeze_item": false,
+    "gate_mode": "global",
+    "basis_mode": "leading",
+    "init_normalization": "unit",
+    "supervised_loss": "pairwise",
+    "context_reg": 1.0,
+    "context_anchor": 1.0,
+    "aux_controls": "observed",
+    "context_rank": 4,
+    "context_mode": "bucket",
+    "tag": "v8_bucket",
+    "full": false,
+    "selection_end_day": 26,
+    "export": null,
+    "threads": 2
+  },
+  "training_feature_config_sha256": "78f09310e176e83f0043552ba7c093c275955d45b80fdddd9244fa1c13b3898a",
+  "training_feature_cache_sha256": "5bc26f02047113ddf7da3759840254930d14b36a7ffa1be46062fec499f9ea85",
+  "training_feature_checkpoint_selection_end_day": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "row_prediction_file": "./arena_runs/v8_cal_bucket/valid_blend.npy",
+  "row_events_file": "./arena_runs/v8_cal_bucket/valid_events.npy",
+  "event_alignment_verified": true,
+  "selection_note": "Rounds chosen using disjoint earlier-period users and global row AUC. Later results are model-selection comparisons, not independent confirmation."
+}

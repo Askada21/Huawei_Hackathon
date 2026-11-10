@@ -1,0 +1,48 @@
+{
+  "training_events": 35230,
+  "excluded_late_events": 8734,
+  "test_events": 35138,
+  "inner_heldout_users": {
+    "raw_auc": 0.7400203370984966,
+    "decomposed_auc": 0.7393685919300288,
+    "event_auc": 0.6627856145992017,
+    "rounds": 477,
+    "clean_row_combiner_auc": 0.7624529436426098,
+    "clean_decomposition_auc": 0.7628560021655522,
+    "fixed_half_correction_auc": 0.7629785295329313,
+    "clean_row_combiner_rounds": 493,
+    "note": "All combiner and event fits exclude held-out user%5==0 labels; fixed half correction specified before this confirmation."
+  },
+  "test_results": {
+    "decomposed_raw_choice": {
+      "auc": 0.7974997008222782,
+      "logloss": 0.20416254170763765
+    },
+    "decomposed_clean_choice": {
+      "auc": 0.8092190545745344,
+      "logloss": 0.19755873549370978
+    },
+    "baseline_clean_joint": {
+      "auc": 0.8089944032037183,
+      "logloss": 0.19739369520455713
+    },
+    "blend_event_weight_0.25": {
+      "auc": 0.8093821595780406,
+      "logloss": 0.1973513788999786
+    },
+    "blend_event_weight_0.5": {
+      "auc": 0.8095594940105124,
+      "logloss": 0.19736336309420885
+    },
+    "blend_event_weight_0.75": {
+      "auc": 0.8095106474706444,
+      "logloss": 0.19743158604808042
+    }
+  },
+  "event_auc": 0.6660897880460763,
+  "test_model": "joint_factor_d32_day26_s42",
+  "test_cutoff": 26,
+  "fit_end_exclusive": 1737849600,
+  "seconds": 17.417419910430908,
+  "selection_note": "Rounds chosen using disjoint earlier-period users and global row AUC. Later results are model-selection comparisons, not independent confirmation."
+}

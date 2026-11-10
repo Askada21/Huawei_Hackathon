@@ -1,0 +1,44 @@
+{
+  "recommended_submission": "submission_techarena_20261101_v3.csv",
+  "official_public_auc": 0.808665,
+  "official_source": "User screenshot, submission2026-11-01 22:59",
+  "baseline_local_auc": 0.8151557921381457,
+  "candidate_local_auc": 0.8152241532766653,
+  "delta": 6.836113851960146e-05,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8124132894322103,
+      0.8183923638625833
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8122562775768568,
+      0.8183257911003303
+    ],
+    "paired_delta_95_percentile_interval": [
+      -0.00010680960533952232,
+      0.0002744415575269111
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "decision": "Retain V3: no reliable improvement; paired interval contains zero; no V4 submission produced",
+  "experiments": [
+    {
+      "hypothesis": "Cover weekday+weekend OOT with converged earlier fitting",
+      "artifact": "v4_cal_mixed",
+      "status": "reject as replacement"
+    },
+    {
+      "hypothesis": "Soft-normalized initialization preserves sparse confidence at equal RMS scale",
+      "artifact": "v4_soft_d32_day26_s42",
+      "auc": 0.8098450531751417,
+      "reference_raw_auc": 0.8112475138898858,
+      "status": "reject"
+    }
+  ],
+  "official_uploads_performed": false,
+  "new_submission": null,
+  "reproduce_command": "python3 arena/run_v4_checks.py"
+}

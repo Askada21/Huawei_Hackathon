@@ -1,0 +1,223 @@
+Training until validation scores don't improve for 80 rounds
+[50]	valid_0's auc: 0.716011
+[100]	valid_0's auc: 0.719669
+[150]	valid_0's auc: 0.721427
+[200]	valid_0's auc: 0.722429
+[250]	valid_0's auc: 0.72287
+[300]	valid_0's auc: 0.723227
+[350]	valid_0's auc: 0.723568
+[400]	valid_0's auc: 0.723802
+[450]	valid_0's auc: 0.72405
+[500]	valid_0's auc: 0.724224
+[550]	valid_0's auc: 0.724391
+[600]	valid_0's auc: 0.724621
+[650]	valid_0's auc: 0.724838
+[700]	valid_0's auc: 0.724949
+[750]	valid_0's auc: 0.725076
+[800]	valid_0's auc: 0.725225
+[850]	valid_0's auc: 0.725268
+[900]	valid_0's auc: 0.725361
+[950]	valid_0's auc: 0.725466
+[1000]	valid_0's auc: 0.725511
+[1050]	valid_0's auc: 0.725527
+[1100]	valid_0's auc: 0.725576
+[1150]	valid_0's auc: 0.725611
+[1200]	valid_0's auc: 0.725667
+[1250]	valid_0's auc: 0.725671
+[1300]	valid_0's auc: 0.725748
+[1350]	valid_0's auc: 0.725771
+[1400]	valid_0's auc: 0.725794
+[1450]	valid_0's auc: 0.725885
+[1500]	valid_0's auc: 0.725881
+Did not meet early stopping. Best iteration is:
+[1473]	valid_0's auc: 0.725902
+{
+  "test_model": "v3_global_gate_d32_day26_s42",
+  "test_cutoff_day": 26,
+  "fulltest": false,
+  "test_feature_provenance": {
+    "directory": "./arena_runs/v3_global_gate_d32_day26_s42",
+    "cache_sha256": "057c87b38d0ca9ac8ffd9faf4123b24e9fde37f2a591ad23d22a918b7ae9e8d9",
+    "cache_bytes": 69649382,
+    "config_sha256": "6cb6f08d797dbdb771418333d3d47d7304caf54adf6bb42ad51ea67370dbd173",
+    "model_config": {
+      "day": 26,
+      "dim": 32,
+      "epochs": 10,
+      "seed": 42,
+      "lr": 0.0024,
+      "reg": 1.0,
+      "aux": 0.5,
+      "anchor": 0.0,
+      "mode": "baseline",
+      "half_life": 24.0,
+      "separate_history": false,
+      "train_history": false,
+      "gates": true,
+      "freeze_item": false,
+      "gate_mode": "global",
+      "tag": "v3_global_gate",
+      "full": false,
+      "selection_end_day": null,
+      "export": null,
+      "threads": 2
+    }
+  },
+  "outer_labels_used_for_fitting_or_round_selection": false,
+  "evaluation_labels_loaded": false,
+  "training_window_days": 1,
+  "event_index_namespaces": "same training-event namespace; explicit overlap check",
+  "mode": "fit_earlier_OOT",
+  "training_periods": [
+    {
+      "directory": "./arena_runs/v3_global_gate_fixed_d32_day24_s42",
+      "cache_sha256": "b8be496f234a925a3884ff01e75f422af96c233b96f510430bf7b798902b5d53",
+      "cache_bytes": 94999162,
+      "config_sha256": "e16ca3122070a9642992989a5c5e74a7b8f5ef4ef18f3ea2224ae1521f84eec3",
+      "model_config": {
+        "day": 24,
+        "dim": 32,
+        "epochs": 2,
+        "seed": 42,
+        "lr": 0.0024,
+        "reg": 1.0,
+        "aux": 0.5,
+        "anchor": 0.0,
+        "mode": "baseline",
+        "half_life": 24.0,
+        "separate_history": false,
+        "train_history": false,
+        "gates": true,
+        "freeze_item": false,
+        "gate_mode": "global",
+        "tag": "v3_global_gate_fixed",
+        "full": false,
+        "selection_end_day": null,
+        "export": null,
+        "threads": 2
+      },
+      "period_day": 24,
+      "eligible_events": 35040,
+      "excluded_events": 12888,
+      "min_time": 1737676800,
+      "max_time": 1737763140,
+      "end_exclusive": 1737763200
+    },
+    {
+      "directory": "./arena_runs/v3_global_gate_d32_day25_s42",
+      "cache_sha256": "9134cf4aad9736966ce3aa75b44de17eecc3e71aabc2f0e3c56a065c79ee4552",
+      "cache_bytes": 87142514,
+      "config_sha256": "e4050be06863ef6c24648e9e894d147a3e4efd7e371cb3d05bb6ba6b3f2c3f74",
+      "model_config": {
+        "day": 25,
+        "dim": 32,
+        "epochs": 10,
+        "seed": 42,
+        "lr": 0.0024,
+        "reg": 1.0,
+        "aux": 0.5,
+        "anchor": 0.0,
+        "mode": "baseline",
+        "half_life": 24.0,
+        "separate_history": false,
+        "train_history": false,
+        "gates": true,
+        "freeze_item": false,
+        "gate_mode": "global",
+        "tag": "v3_global_gate",
+        "full": false,
+        "selection_end_day": 26,
+        "export": null,
+        "threads": 2
+      },
+      "period_day": 25,
+      "eligible_events": 35230,
+      "excluded_events": 8734,
+      "min_time": 1737763200,
+      "max_time": 1737849540,
+      "end_exclusive": 1737849600
+    }
+  ],
+  "training_events": 70270,
+  "training_rows": 702700,
+  "training_event_sha256": "99a9331f8369755d2f70efb3d281d3fe814e7eb10ecca130742b17e09b34de59",
+  "inner_holdout_rule": "user_id_integer_lookup_index %5 ==0; same user partition across all periods",
+  "inner_users_fit": 35223,
+  "inner_users_holdout": 8732,
+  "inner_rows_fit": 563050,
+  "inner_rows_holdout": 139650,
+  "inner_auc": 0.7259022817854415,
+  "rounds": 1473,
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "num_leaves": 7,
+    "min_data_in_leaf": 500,
+    "learning_rate": 0.03,
+    "lambda_l2": 30,
+    "num_threads": 2,
+    "verbosity": -1,
+    "seed": 42
+  },
+  "max_rounds": 1500,
+  "patience": 80,
+  "best_iteration_at_search_boundary": false,
+  "inner_evidence_role": "model-selection evidence; rounds selected on earlier held-out users, not an untouched confirmation",
+  "features": [
+    "history_n",
+    "bucket",
+    "day",
+    "hours_since_1",
+    "hours_since_2",
+    "hours_since_5",
+    "hours_since_10",
+    "hours_since_20",
+    "history_span",
+    "history_count",
+    "history_count_mean_diff",
+    "history_count_max_diff",
+    "history_count_rank",
+    "candidate_recency",
+    "user_n",
+    "user_clicks",
+    "user_ctr_5",
+    "item_ctr_5",
+    "item_ctr_5_mean_diff",
+    "item_ctr_5_max_diff",
+    "item_ctr_5_rank",
+    "user_ctr_50",
+    "item_ctr_50",
+    "item_ctr_50_mean_diff",
+    "item_ctr_50_max_diff",
+    "item_ctr_50_rank",
+    "user_ctr_200",
+    "item_ctr_200",
+    "item_ctr_200_mean_diff",
+    "item_ctr_200_max_diff",
+    "item_ctr_200_rank",
+    "item_n",
+    "item_n_mean_diff",
+    "item_n_max_diff",
+    "item_n_rank",
+    "item_clicks",
+    "factor_probability",
+    "factor_logit",
+    "factor_logit_minus_mean",
+    "factor_logit_minus_max",
+    "factor_rank",
+    "event_p",
+    "event_max",
+    "event_entropy",
+    "event_score_std",
+    "history_cosine_mean",
+    "history_cosine_max",
+    "history_cosine_last"
+  ],
+  "test_events": 35138,
+  "seconds": 67.01883888244629,
+  "outer_metrics": {
+    "auc": 0.8112230011691712,
+    "logloss": 0.19708064004433948,
+    "role": "outer model-comparison evidence; choosing single vs multi-period recipes here is still model selection"
+  }
+}

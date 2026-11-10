@@ -1,0 +1,39 @@
+{
+  "recorded_utc": "2026-11-02T10:52:58.888929+00:00",
+  "decision": "retain_v8",
+  "candidate_local_auc": 0.8175231061573408,
+  "baseline_local_auc": 0.8174909942141402,
+  "delta": 3.2111943200630044e-05,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8146400987768784,
+      0.8206237858402798
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8145865873050581,
+      0.8205605375617872
+    ],
+    "paired_delta_95_percentile_interval": [
+      -4.9574422711690104e-05,
+      0.00010276779439595267
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "reason": "Tiny final gain includes zero under paired event bootstrap; raw factors decline on both temporal cutoffs.",
+  "new_submission_created": false,
+  "official_candidate_auc": null,
+  "retained_submission": "./submission_techarena_20261102_v8.csv",
+  "reproduce_command": "python3 arena/run_v9_checks.py",
+  "code_and_model_sha256": {
+    "arena/history_model_v3.py": "de568a4b2746f27d419835964ffd92867171df369f790db034113376a9270ed3",
+    "arena/test_context_v8.py": "b2b1ec004cb2ef509cf2971c37bcca664b2a332e0b930816f3148be54461a84a",
+    "arena/run_v9_checks.py": "ded4d6dd931f736459de13215f0f0268ba6a0f1467497e3368d685747d29e777",
+    "arena_runs/v9_controlled_d32_day25_s42/model.pt": "f47d1c25f1f5d59635738373a7c7bbfddcd94686798f2d2d3aad08dd72251da9",
+    "arena_runs/v9_controlled_d32_day26_s42/model.pt": "51855f0af63bac28978adbca16efaa586e686587a202fa5a9bf15301ce2ac4ab",
+    "arena_runs/v9_cal_controlled/model.txt": "2ce4e5b6f58354f4a090a23838bd080d194251257b5727f04d31b00b43b2bdc4",
+    "arena_runs/v9_event_controlled/event_model.txt": "bdd5a005176f2aba978d1aff82b9720ffbad9489196f6f0433e6fc5650d4ed32"
+  }
+}

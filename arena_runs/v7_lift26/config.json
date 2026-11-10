@@ -1,0 +1,9 @@
+{
+  "day": 26,
+  "full": false,
+  "family": "distinct_user_shrunken_loglift",
+  "topk": 200,
+  "shrink": 5,
+  "source": "./arena_runs/v5_observed_aux_d32_day26_s42",
+  "seconds": 7.743787050247192
+}

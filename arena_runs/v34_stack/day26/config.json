@@ -1,0 +1,31 @@
+{
+  "day": 26,
+  "full": false,
+  "members": [
+    [
+      "v19_checks",
+      "v19_shrink40",
+      42
+    ],
+    [
+      "v22_checks",
+      "v22_seed43",
+      43
+    ],
+    [
+      "v24_checks",
+      "v24_seed44",
+      44
+    ],
+    [
+      "v25_checks",
+      "v25_signed",
+      42
+    ],
+    [
+      "v31_verified",
+      "v31_decay",
+      42
+    ]
+  ]
+}

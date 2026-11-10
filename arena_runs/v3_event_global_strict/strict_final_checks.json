@@ -1,0 +1,17 @@
+{
+  "status": "verified",
+  "event_contract_tests_passed": 9,
+  "modules_compile": true,
+  "training_events": 35230,
+  "late_events_excluded": 8734,
+  "training_feature_day": 25,
+  "training_feature_selection_end_day_exclusive": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "row_combiner_rounds": 500,
+  "event_booster_rounds": 499,
+  "event_feature_count": 194,
+  "model_sha256": "c50d7f844f747a0890d2cc77f08ba04a1c9546bbebe337e9912c9c5990be14bb",
+  "fixed_half_validation_auc": 0.8151557921381457,
+  "inference_cli_exactly_reproduces_reported_auc": true,
+  "evidence_role": "earlier held-out and Jan26 model-selection evidence, not untouched independent confirmation"
+}

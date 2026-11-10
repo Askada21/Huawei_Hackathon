@@ -1,0 +1,104 @@
+{
+  "cutoff_day": 25,
+  "candidate_path": "./arena_runs/v35_rank/prediction25.npy",
+  "baseline_path": "./arena_runs/v31_verified/v31_decay_d32_day25_s42/ensemble_valid.npy",
+  "events_path": "./arena_runs/v31_verified/v31_decay_d32_day25_s42/valid_events.npy",
+  "fitting_events": 490420,
+  "candidate": {
+    "events": 43964,
+    "rows": 439640,
+    "clicked_rows": 27851,
+    "global_row_auc": 0.8083392086519645,
+    "binary_row_logloss": 0.1987214374819936,
+    "event_click_auc_using_probability_sum": 0.6369623747393011,
+    "clicked_event_row_auc": 0.8159650632406175,
+    "clicked_event_top1_accuracy": 0.3815302861656673,
+    "event_prediction_sum_min": 0.09305018337909131,
+    "event_prediction_sum_max": 0.9999014833983894
+  },
+  "baseline": {
+    "events": 43964,
+    "rows": 439640,
+    "clicked_rows": 27851,
+    "global_row_auc": 0.7999715646767043,
+    "binary_row_logloss": 0.20919601619243622,
+    "event_click_auc_using_probability_sum": 0.6369623725109541,
+    "clicked_event_row_auc": 0.8095555184574108,
+    "clicked_event_top1_accuracy": 0.3723026103191986,
+    "event_prediction_sum_min": 0.09305018186569214,
+    "event_prediction_sum_max": 0.9999014735221863
+  },
+  "global_auc_delta": 0.008367643975260242,
+  "subgroups": {
+    "history_0_5": {
+      "rows": 62020,
+      "clicked_rows": 3617,
+      "candidate_auc": 0.7356750949168172,
+      "baseline_auc": 0.7290923692660471,
+      "auc_delta": 0.006582725650770005,
+      "events": 6202
+    },
+    "history_6_15": {
+      "rows": 150120,
+      "clicked_rows": 9265,
+      "candidate_auc": 0.8008225059420954,
+      "baseline_auc": 0.7929410760891059,
+      "auc_delta": 0.007881429852989452,
+      "events": 15012
+    },
+    "history_16_20": {
+      "rows": 227500,
+      "clicked_rows": 14969,
+      "candidate_auc": 0.8276233818042876,
+      "baseline_auc": 0.81919694354042,
+      "auc_delta": 0.008426438263867575,
+      "events": 22750
+    },
+    "unseen_fitting_user": {
+      "rows": 14680,
+      "clicked_rows": 938,
+      "candidate_auc": 0.724330480785254,
+      "baseline_auc": 0.7196746220867719,
+      "auc_delta": 0.004655858698482063,
+      "events": 1468
+    },
+    "seen_fitting_user": {
+      "rows": 424960,
+      "clicked_rows": 26913,
+      "candidate_auc": 0.8107337475065951,
+      "baseline_auc": 0.8022619950043418,
+      "auc_delta": 0.008471752502253294,
+      "events": 42496
+    },
+    "item_fit_impressions_0_20": {
+      "rows": 28,
+      "clicked_rows": 1,
+      "candidate_auc": 0.7777777777777778,
+      "baseline_auc": 0.8518518518518519,
+      "auc_delta": -0.07407407407407407
+    },
+    "item_fit_impressions_21_100": {
+      "rows": 197838,
+      "clicked_rows": 11602,
+      "candidate_auc": 0.7880897289583237,
+      "baseline_auc": 0.7778682296529787,
+      "auc_delta": 0.010221499305344994
+    },
+    "item_fit_impressions_above_100": {
+      "rows": 241774,
+      "clicked_rows": 16248,
+      "candidate_auc": 0.8221557769583472,
+      "baseline_auc": 0.8153563057965527,
+      "auc_delta": 0.006799471161794468
+    }
+  },
+  "notes": [
+    "Metrics are local validation diagnostics, not official leaderboard scores.",
+    "All comparisons use identical ordered events, one event per validation user.",
+    "Subgroup AUCs are not causal comparisons and need not average to global AUC.",
+    "Probability-sum event AUC is a ranking diagnostic; sums may exceed one after calibration."
+  ],
+  "candidate_sha256": "1b8b47833a636cee7fdfff82b4e12682a79a0ed41206997850cbe3c7fc3cdeab",
+  "baseline_sha256": "86988da2393f4c03a26ec2b264bdc9f76b4fdc26c4b61513fed40371e77f1867",
+  "events_sha256": "385dc8959fa3e990daa63d09d7fb333bd2fe71236d5b73ea80dc478aeac62eb7"
+}

@@ -1,0 +1,12 @@
+{
+  "v3_global_gate_d32_day26_s42": {
+    "events_checked": 1198,
+    "max_absolute_probability_difference": 0.0,
+    "empty_histories_included": true
+  },
+  "v3_final_global_d32_day26_s42_full": {
+    "events_checked": 1670,
+    "max_absolute_probability_difference": 0.0,
+    "empty_histories_included": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "file": "./submission_techarena_v148_neighbors.csv",
+  "rows": 529390,
+  "min_probability": 0.0003544284885,
+  "max_probability": 0.8035817662,
+  "mean_probability": 0.05773054804656416,
+  "sha256": "da413cb8bc1884fd31e5c9bf60d6977f5c312efd758593d5ade0e2ac4ed2e67b",
+  "header": [
+    "rowid",
+    "predicted_probability"
+  ],
+  "rowids_exactly_match_evaluation": true,
+  "all_values_finite_and_in_range": true,
+  "prediction_sources": [
+    "arena_runs/v148_evaluation.npy"
+  ]
+}

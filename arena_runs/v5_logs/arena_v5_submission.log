@@ -1,0 +1,17 @@
+{
+  "file": "./submission_techarena_20261102_v5.csv",
+  "rows": 529390,
+  "min_probability": 0.0004076604557,
+  "max_probability": 0.7659641782,
+  "mean_probability": 0.059699537040582805,
+  "sha256": "8a2545d423b605cec4dcd9fe7d4007315e6ffd86067cd2e9383104ff677d4567",
+  "header": [
+    "rowid",
+    "predicted_probability"
+  ],
+  "rowids_exactly_match_evaluation": true,
+  "all_values_finite_and_in_range": true,
+  "prediction_sources": [
+    "arena_runs/v5_final_combiner/evaluation_final.npy"
+  ]
+}

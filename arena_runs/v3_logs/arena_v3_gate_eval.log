@@ -1,0 +1,2 @@
+{"name": "v3_reliability_d32_day26_s42_clean", "day": 26, "auc": 0.8103454273998167, "logloss": 0.196350996823024, "recorded_utc": "2026-11-01T22:18:24.533915+00:00"}
+{"name": "v3_reliability_d32_day26_s42_blend_half", "day": 26, "auc": 0.8112936777933412, "logloss": 0.1965651729991005, "recorded_utc": "2026-11-01T22:18:24.629346+00:00"}

@@ -1,0 +1,9 @@
+{
+  "event_g_confirm_vs_decomposition_max_abs": 0.0,
+  "event_models_text_identical": true,
+  "cli_vs_reported_half_correction_max_abs": 0.0,
+  "event_fit_events": 35230,
+  "early_fit_events": 28248,
+  "heldout_events": 6982,
+  "final_refit": "event_model.txt is refitted on ALL35230eligible Jan25 events after choosing477rounds on6982heldoutusers; both v3_event_decomposition and v3_event_confirm produce the exact same finalg."
+}

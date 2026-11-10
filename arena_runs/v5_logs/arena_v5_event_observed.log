@@ -1,0 +1,93 @@
+Training until validation scores don't improve for 40 rounds
+[100]	valid_0's global_row_auc: 0.757293
+[200]	valid_0's global_row_auc: 0.757825
+[300]	valid_0's global_row_auc: 0.757941
+[400]	valid_0's global_row_auc: 0.757988
+[500]	valid_0's global_row_auc: 0.758009
+Did not meet early stopping. Best iteration is:
+[500]	valid_0's global_row_auc: 0.758009
+{
+  "training_events": 35230,
+  "excluded_late_events": 8734,
+  "test_events": 35138,
+  "inner_heldout_users": {
+    "raw_auc": 0.7590698831829504,
+    "decomposed_auc": 0.75800871407171,
+    "event_auc": 0.6616415701807546,
+    "rounds": 500,
+    "clean_row_combiner_auc": 0.7718375294560413,
+    "clean_decomposition_auc": 0.7720362642703493,
+    "fixed_half_correction_auc": 0.7721743883091836,
+    "clean_row_combiner_rounds": 430,
+    "evidence_role": "model-selection evidence; not an untouched confirmation set because early-stopping rounds were chosen on these users",
+    "note": "All combiner and event fits exclude held-out user%5==0 labels; fixed half correction specified before this earlier-period comparison."
+  },
+  "test_results": {
+    "decomposed_raw_choice": {
+      "auc": 0.8118106687798263,
+      "logloss": 0.1987933562690054
+    },
+    "decomposed_clean_choice": {
+      "auc": 0.8163931722221148,
+      "logloss": 0.19345089114771236
+    },
+    "baseline_clean_rows": {
+      "auc": 0.8161812889096942,
+      "logloss": 0.19341928670433467
+    },
+    "blend_event_weight_0.25": {
+      "auc": 0.816528239489137,
+      "logloss": 0.19334365966311615
+    },
+    "blend_event_weight_0.5": {
+      "auc": 0.816668554262359,
+      "logloss": 0.19332560332682552
+    },
+    "blend_event_weight_0.75": {
+      "auc": 0.8166211579031841,
+      "logloss": 0.193361999686457
+    }
+  },
+  "event_auc": 0.6661303556574034,
+  "test_model": "v5_observed_aux_d32_day26_s42",
+  "test_cutoff": 26,
+  "fit_end_exclusive": 1737849600,
+  "seconds": 16.172955989837646,
+  "train_model": "v5_observed_aux_d32_day25_s42",
+  "training_feature_config": {
+    "day": 25,
+    "dim": 32,
+    "epochs": 12,
+    "seed": 42,
+    "lr": 0.0024,
+    "reg": 1.0,
+    "aux": 0.5,
+    "anchor": 0.0,
+    "mode": "baseline",
+    "half_life": 24.0,
+    "separate_history": false,
+    "train_history": false,
+    "gates": true,
+    "freeze_item": false,
+    "gate_mode": "global",
+    "basis_mode": "leading",
+    "init_normalization": "unit",
+    "supervised_loss": "pairwise",
+    "context_reg": 1.0,
+    "context_anchor": 1.0,
+    "aux_controls": "observed",
+    "tag": "v5_observed_aux",
+    "full": false,
+    "selection_end_day": 26,
+    "export": null,
+    "threads": 2
+  },
+  "training_feature_config_sha256": "fac339ea1e9c097902ed6819c89540b1d5a27a748cfe298b847acc8524eb03ee",
+  "training_feature_cache_sha256": "0fb909cf28a936c7fb1db114a1a30d86bdb87bcbc02a73e32600ad0e436cc05f",
+  "training_feature_checkpoint_selection_end_day": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "row_prediction_file": "./arena_runs/v5_cal_observed/valid_blend.npy",
+  "row_events_file": "./arena_runs/v5_cal_observed/valid_events.npy",
+  "event_alignment_verified": true,
+  "selection_note": "Rounds chosen using disjoint earlier-period users and global row AUC. Later results are model-selection comparisons, not independent confirmation."
+}

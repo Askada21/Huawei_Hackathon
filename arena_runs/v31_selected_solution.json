@@ -1,0 +1,50 @@
+{
+  "name": "v31_selected_solution",
+  "local_auc": 0.82454681241984,
+  "baseline_local_auc": 0.8233002237498761,
+  "delta": 0.001246588669963855,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8216640539255523,
+      0.8274788323892979
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8203774832162691,
+      0.8263574636808595
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.0010400701231960741,
+      0.0014865282073006749
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "raw_deltas": {
+    "24": 0.012077670522327222,
+    "25": 0.0061588842445352565,
+    "26": 0.0012378707327581617
+  },
+  "submission": {
+    "file": "./submission_techarena_v31_reproduced_20261103T113925Z.csv",
+    "rows": 529390,
+    "min_probability": 0.0004101100935,
+    "max_probability": 0.7579193676,
+    "mean_probability": 0.05311122648660524,
+    "sha256": "717f93f698c4394f01a8c29eb80c159feca619d00e4d2530bf0681cfb74c4d65",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "./arena_runs/v31_verified/v31_final_combiner/ensemble_evaluation.npy"
+    ]
+  },
+  "run": "./arena_runs/v31_verified",
+  "reproduce_command": "python3 arena/run_v17_checks.py --variant decay --broad --full",
+  "official_auc": null,
+  "target_auc": 0.834673
+}

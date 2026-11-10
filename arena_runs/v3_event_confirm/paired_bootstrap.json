@@ -1,0 +1,24 @@
+{
+  "earlier_heldout_users": {
+    "events": 6982,
+    "baseline_auc": 0.7624529436426098,
+    "corrected_auc": 0.7629785295329313,
+    "delta95": [
+      0.0002581018595826601,
+      0.0008457192211549696
+    ],
+    "constant_mass_shrink_auc": 0.7610840371257331
+  },
+  "later_Jan26": {
+    "events": 35138,
+    "baseline_auc": 0.8089944032037183,
+    "corrected_auc": 0.8095594940105124,
+    "delta95": [
+      0.00042450998211006065,
+      0.000699715162547232
+    ],
+    "constant_mass_shrink_auc": 0.8091472038321105
+  },
+  "limitations": "Paired event bootstrap measures sampling uncertainty, not selection bias. Earlier heldout rounds used for early stopping. Fixed constant-mass diagnostic uses Jan25 non-held-out training events only.",
+  "constant_event_mass_from_training_only": 0.6347706032285472
+}

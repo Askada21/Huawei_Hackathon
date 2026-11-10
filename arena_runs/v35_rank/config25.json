@@ -1,0 +1,7 @@
+{
+  "cutoff": 25,
+  "temperature": 0.8280099737249991,
+  "training_clicked_events": 21980,
+  "rounds": 75,
+  "candidate_weight": 0.5
+}

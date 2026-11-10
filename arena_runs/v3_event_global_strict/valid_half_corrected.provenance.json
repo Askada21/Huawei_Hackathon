@@ -1,0 +1,20 @@
+{
+  "features": "./arena_runs/v3_global_gate_d32_day26_s42/calibration_features.npz",
+  "rows": "./arena_runs/v3_cal_global_single/valid_blend.npy",
+  "event_model": "./arena_runs/v3_event_global_strict/event_model.txt",
+  "output": "./arena_runs/v3_event_global_strict/valid_half_corrected.npy",
+  "row_events": "./arena_runs/v3_global_gate_d32_day26_s42/valid_events.npy",
+  "event_alignment_verified": true,
+  "events": 35138,
+  "rows_count": 351380,
+  "fixed_correction_weight": 0.5,
+  "formula": "0.5 * row_probability + 0.5 * event_probability * row_probability / sum_event_row_probabilities",
+  "event_model_fitting": "January25 first-user OOT events strictly before January26; 35230 events, excluding8734 later events",
+  "event_model_fit_end_exclusive_utc": "2025-01-26T00:00:00Z",
+  "training_feature_checkpoint_selection_end_day": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "prediction_labels_read": false,
+  "output_sha256": "76da86d3b0c42db7b35f1e98efac1db9646eafd7f5f242ac26ecb45a88243a2f",
+  "event_model_sha256": "c50d7f844f747a0890d2cc77f08ba04a1c9546bbebe337e9912c9c5990be14bb",
+  "all_probabilities_finite_and_in_range": true
+}

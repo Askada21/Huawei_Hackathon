@@ -1,0 +1,19 @@
+Calibration training events strictly before test cutoff: 35230 excluded later events: 8734
+Training until validation scores don't improve for 35 rounds
+[50]	valid_0's auc: 0.76812
+[100]	valid_0's auc: 0.77011
+[150]	valid_0's auc: 0.771215
+[200]	valid_0's auc: 0.771716
+[250]	valid_0's auc: 0.772081
+[300]	valid_0's auc: 0.772219
+[350]	valid_0's auc: 0.772298
+[400]	valid_0's auc: 0.772396
+[450]	valid_0's auc: 0.772432
+Early stopping, best iteration is:
+[435]	valid_0's auc: 0.772441
+{"name": "calibrator_inner_raw", "day": 25, "auc": 0.7604002541863961, "logloss": 0.2617250084877014, "recorded_utc": "2026-11-02T09:56:25.134093+00:00"}
+{"name": "calibrator_inner_tree", "day": 25, "auc": 0.7724406703958485, "logloss": 0.20369327694932857, "recorded_utc": "2026-11-02T09:56:25.295916+00:00", "iteration": 435}
+{"name": "v5_cal_pair", "day": 26, "auc": 0.8131978375731914, "logloss": 0.197515743142742, "recorded_utc": "2026-11-02T09:56:29.831130+00:00", "artifact": "./arena_runs/v5_cal_pair"}
+{"name": "v5_cal_pair_raw_weight0.25", "day": 26, "auc": 0.8155338629921061, "logloss": 0.19378082649444364, "recorded_utc": "2026-11-02T09:56:29.923897+00:00"}
+{"name": "v5_cal_pair_raw_weight0.5", "day": 26, "auc": 0.8150832683655931, "logloss": 0.19341524923534056, "recorded_utc": "2026-11-02T09:56:30.013804+00:00"}
+{"name": "v5_cal_pair_raw_weight0.75", "day": 26, "auc": 0.8138480472454662, "logloss": 0.19582583748573276, "recorded_utc": "2026-11-02T09:56:30.107522+00:00"}

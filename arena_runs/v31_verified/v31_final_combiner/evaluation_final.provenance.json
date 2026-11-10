@@ -1,0 +1,20 @@
+{
+  "features": "./arena_runs/v31_verified/v31_decay_final_d32_day26_s42_full/calibration_features.npz",
+  "rows": "./arena_runs/v31_verified/v31_final_combiner/evaluation_blend.npy",
+  "event_model": "./arena_runs/v31_verified/v31_event_confidence/event_model.txt",
+  "output": "./arena_runs/v31_verified/v31_final_combiner/evaluation_final.npy",
+  "row_events": "./arena_runs/v31_verified/v31_final_combiner/events.npy",
+  "event_alignment_verified": true,
+  "events": 52939,
+  "rows_count": 529390,
+  "fixed_correction_weight": 0.5,
+  "formula": "0.5 * row_probability + 0.5 * event_probability * row_probability / sum_event_row_probabilities",
+  "event_model_fitting": "January25 first-user OOT events strictly before January26; 35230 events, excluding8734 later events",
+  "event_model_fit_end_exclusive_utc": "2025-01-26T00:00:00Z",
+  "training_feature_checkpoint_selection_end_day": 26,
+  "training_feature_checkpoint_selection_known_strict": true,
+  "prediction_labels_read": false,
+  "output_sha256": "21869494992d548926b4c60c60d69a9e43f8c7f99e7f976700bff3231e4137c6",
+  "event_model_sha256": "a0ba59d45060c2fd1ca75984cc0ca97373f7bb4c50402d02a5507abe3874e11e",
+  "all_probabilities_finite_and_in_range": true
+}

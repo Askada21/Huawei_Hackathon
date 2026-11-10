@@ -1,0 +1,31 @@
+{
+  "incumbent": "submission_techarena_20261102_v5.csv",
+  "incumbent_local_auc": 0.816668554262359,
+  "candidate_auc": 0.8167810867557882,
+  "delta": 0.00011253249342924043,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8138165296461366,
+      0.8198805116491515
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8137145624988789,
+      0.8197994892932786
+    ],
+    "paired_delta_95_percentile_interval": [
+      -4.794203590806345e-05,
+      0.000276651179052484
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "decision": "Retain V5: paired interval includes zero; V3/V5 blend also declined. No new CSV.",
+  "uploaded": false,
+  "experiments": [
+    "Equal V3+V5 blend:0.8162694449396238",
+    "Fixed two-epoch seed43 V5:0.8163250827792534",
+    "Equal seed42/43 V5 blend:0.8167810867557882"
+  ]
+}

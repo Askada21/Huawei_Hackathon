@@ -1,0 +1,9 @@
+{
+  "day": 26,
+  "out": "v7_adapt26",
+  "source": "./arena_runs/v5_observed_aux_d32_day26_s42",
+  "ridge": 2,
+  "iterations": 3,
+  "prior": "zero correction to frozen V5",
+  "seconds": 30.07598900794983
+}

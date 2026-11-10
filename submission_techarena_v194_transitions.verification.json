@@ -1,0 +1,17 @@
+{
+  "file": "./submission_techarena_v194_transitions.csv",
+  "rows": 529390,
+  "min_probability": 0.0003434471191,
+  "max_probability": 0.8185936235,
+  "mean_probability": 0.0577720453465652,
+  "sha256": "e07b17100b21e0785f87a7e704bdb47e89c8d95bd639a5ce16030c70de54d96e",
+  "header": [
+    "rowid",
+    "predicted_probability"
+  ],
+  "rowids_exactly_match_evaluation": true,
+  "all_values_finite_and_in_range": true,
+  "prediction_sources": [
+    "arena_runs/v194_evaluation.npy"
+  ]
+}

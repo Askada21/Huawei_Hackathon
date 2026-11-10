@@ -1,0 +1,71 @@
+{
+  "selected_validation_auc": 0.8151557921381457,
+  "previous_auc": 0.8089944032037183,
+  "paired_delta": 0.006161388934427414,
+  "bootstrap": {
+    "replicates": 150,
+    "seed": 42,
+    "unit": "whole event = distinct validation user",
+    "candidate_auc_95_percentile_interval": [
+      0.8122562775768568,
+      0.8183257911003303
+    ],
+    "baseline_auc_95_percentile_interval": [
+      0.8063884938846857,
+      0.8120917775154963
+    ],
+    "paired_delta_95_percentile_interval": [
+      0.005500404794168532,
+      0.006844950400795527
+    ],
+    "limitation": "Sampling uncertainty only, not model-selection bias or temporal shift."
+  },
+  "validation_events": 35138,
+  "validation_rows": 351380,
+  "validation_role": "model selection, not an untouched official test",
+  "other_cutoff_global_factor_auc": 0.7527149807331082,
+  "day24_fixed_recipe_caution": "global two-epoch .637734 vs reference three-epoch .658210; not uniform confirmation",
+  "factor_model": "arena_runs/v3_final_global_d32_day26_s42_full/model.pt",
+  "factor_training_events": 686824,
+  "factor_epochs": 2,
+  "row_combiner": "arena_runs/v3_cal_global_single/model.txt",
+  "row_combiner_rounds": 500,
+  "event_combiner": "arena_runs/v3_event_global_strict/event_model.txt",
+  "event_rounds": 499,
+  "combiner_training_events": 35230,
+  "combiner_checkpoint_selection_and_fitting_end_exclusive": "2025-01-26T00:00:00Z",
+  "global_factor_logit_blend_weight": 0.25,
+  "event_probability_correction_weight": 0.5,
+  "submission": {
+    "file": "./submission_techarena_20261101_v3.csv",
+    "rows": 529390,
+    "min_probability": 0.0004236330738,
+    "max_probability": 0.7604069381,
+    "mean_probability": 0.060077533997560335,
+    "sha256": "99056cb64ba46d168ed70d2ff394aea2b516a943d4a78457e651be893599e16c",
+    "header": [
+      "rowid",
+      "predicted_probability"
+    ],
+    "rowids_exactly_match_evaluation": true,
+    "all_values_finite_and_in_range": true,
+    "prediction_sources": [
+      "arena_runs/v3_final_combiner/evaluation_final_strict.npy"
+    ]
+  },
+  "sha256": {
+    "arena/history_model_v3.py": "ad168c72432b9468ebabaefcec390c26dd07390cd14de03d9fefd2d220cd98bb",
+    "arena/calibrate_v3.py": "6f6bd04326e8ad6f206d4ad9ca333195bc3c4130ad84887717431e83296115a5",
+    "arena/calibrate.py": "f54b9fea595df108e5478089cd13afa5c1f93b7f32c09b5e89bdef4d79e8180e",
+    "arena/event_component_v3.py": "3193733130e1ceb82ef338f0e9e541705f9bd4981686db4bba5b32a50d4146d7",
+    "arena/v3_event_apply.py": "8458d0b0458517110ea847adb389e1cdad2c09c54434184d0e648813108875bc",
+    "arena/blend_v3.py": "b3f8cc5960e9ca65ba27a6437d73c32b7acce59eaa0a27258986f05ae91ffdaf",
+    "arena/run_v3.py": "76bb54f6b3379f9f451e0150fc16bda6b3ab8ffbd5bc0cc987184b78d3780659",
+    "arena_runs/v3_final_global_d32_day26_s42_full/model.pt": "c296bf5faf4b0d9924dca4ce64a3b5da482d13f7984e82b5cf0e09e4b689ed03",
+    "arena_runs/v3_cal_global_single/model.txt": "828f85f9483fdca737ce4d0ec6a82f32d2c3fa48033a394f55c5a247fb47fd3e",
+    "arena_runs/v3_event_global_strict/event_model.txt": "c50d7f844f747a0890d2cc77f08ba04a1c9546bbebe337e9912c9c5990be14bb"
+  },
+  "reproduce_command": "python3 arena/run_v3.py",
+  "official_score": null,
+  "uploaded": false
+}

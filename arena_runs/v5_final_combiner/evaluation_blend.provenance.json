@@ -1,0 +1,11 @@
+{
+  "raw": "arena_runs/v5_observed_final_d32_day26_s42_full/evaluation_pred.npy",
+  "combined": "arena_runs/v5_final_combiner/evaluation_pred.npy",
+  "raw_events": "arena_runs/v5_observed_final_d32_day26_s42_full/evaluation_events.npy",
+  "combined_events": "arena_runs/v5_final_combiner/events.npy",
+  "out": "arena_runs/v5_final_combiner/evaluation_blend.npy",
+  "raw_weight": 0.25,
+  "events": 52939,
+  "probabilities_finite_in_range": true,
+  "events_sha256": "a41b110083b13dcbcd930470124dc7fe0da3ef7ffc0cdf6a15a1a313b7d02abc"
+}

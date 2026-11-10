@@ -1,0 +1,9 @@
+{"epoch": 1, "loss": 1.9755580379731126, "seconds": 4.7320661544799805, "auc": 0.787837389764795, "selection_auc": 0.787837389764795}
+{"epoch": 2, "loss": 1.811120641314321, "seconds": 9.411696910858154, "auc": 0.7910974812521003, "selection_auc": 0.7910974812521003}
+{"epoch": 3, "loss": 1.7479623498188124, "seconds": 17.193785190582275, "auc": 0.7956320282273137, "selection_auc": 0.7956320282273137}
+{"epoch": 4, "loss": 1.6655931646625202, "seconds": 32.055922985076904, "auc": 0.7962259929409315, "selection_auc": 0.7962259929409315}
+{"epoch": 5, "loss": 1.6104004010558128, "seconds": 42.75197219848633, "auc": 0.7960406851756535, "selection_auc": 0.7960406851756535}
+{"epoch": 6, "loss": 1.5699868665801153, "seconds": 50.42254686355591, "auc": 0.7956938266397673, "selection_auc": 0.7956938266397673}
+{"epoch": 7, "loss": 1.5389745467238956, "seconds": 58.18571591377258, "auc": 0.7949070263761943, "selection_auc": 0.7949070263761943}
+{"epoch": 8, "loss": 1.5142041473752923, "seconds": 66.01982688903809, "auc": 0.794212736710257, "selection_auc": 0.794212736710257}
+{"name": "stable_staged_d32_day26_s42", "day": 26, "auc": 0.7962259929409315, "logloss": 0.20139382779598236, "recorded_utc": "2026-11-01T22:23:36.374468+00:00", "config": {"day": 26, "mode": "staged", "epochs": 12, "anchor": 10, "lr": 0.0024, "full": false, "seed": 42, "tag": "stable", "selection_end_day": null, "threads": 2, "dim": 32, "no_history": false, "cosine": false, "objective": "softmax", "family": "stable_v3", "reg": 1, "aux": 0.5}, "seconds": 66.15882587432861, "artifact": "./arena_runs/stable_staged_d32_day26_s42"}
