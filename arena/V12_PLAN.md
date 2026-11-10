@@ -1,0 +1,7 @@
+# V12: regularized spectral initialization
+
+Past spectral diagnostics found many leading components concentrated on very few users/items. Earlier participation-based component removal did not help, so do not repeat it. Instead test a different graph operator: normalize the fitting-only log-count click matrix by `(degree + 10)^-1/2` on both user and item sides, before the same rank-64 SVD. Ten is a fixed modest pseudodegree, not chosen by searching validation outcomes. This changes the basis itself, not just component selection or embedding norm. Keep original leading 32 retained components, unit row normalization, V8 objective, seed, rank-four contexts and downstream recipe fixed.
+
+Hypothesis: shrink isolated sparse graph components relative to shared structure. Localization alone is not a correctness bug or proof of useful signal. Compare raw January 26 and strictly selected January 25 frames, then proceed to combiners if promising. No V9/V10/V11 options. Preserve old files, no uploads or paid compute. No degree grid is planned.
+
+Historical inventory: `degree_factor_d32_day26_s42` already tested degree 10 in the older factor model, scoring 0.752190 with no auxiliary loss, learning rate 0.008, no global gates or contextual transform. Therefore this is a controlled retest in the selected V8 training recipe, not the first use of degree smoothing. Do not interpret a change across those different recipes as evidence for degree smoothing by itself; compare against V8 only.
