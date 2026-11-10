@@ -1,0 +1,13 @@
+{
+  "day": 26,
+  "dim": 32,
+  "epochs": 30,
+  "pretrain": 12,
+  "seed": 42,
+  "lr": 0.008,
+  "reg": 0.001,
+  "no_history": false,
+  "objective": "softmax",
+  "tag": "factor",
+  "full": false
+}
