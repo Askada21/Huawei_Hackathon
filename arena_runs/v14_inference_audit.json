@@ -1,0 +1,18 @@
+{
+  "v13_aux2_controlled_d32_day26_s42": {
+    "events": 118,
+    "cold_events": 51,
+    "maximum_absolute_difference_from_saved": 0.0,
+    "repeat_predictions_exactly_equal": true,
+    "history_scale": 0.2539181411266327,
+    "cold_history_scale": null
+  },
+  "v14_coldpath_d32_day26_s42": {
+    "events": 118,
+    "cold_events": 51,
+    "maximum_absolute_difference_from_saved": 0.0,
+    "repeat_predictions_exactly_equal": true,
+    "history_scale": 0.2288592904806137,
+    "cold_history_scale": 0.9044288992881775
+  }
+}
