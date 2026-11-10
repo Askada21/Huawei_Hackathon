@@ -1,0 +1,5 @@
+# V14: train a cold-user history path
+
+V13 improves global AUC but declines for users with no fitting impressions. Their user vectors/biases have no impression training, while the history scale was mostly learned alongside known profiles. Test hiding user vector, bias and time bias in 10% of fitting supervised events. Fit one separate cold-history scale on these events; use that scale for users with zero fitting exposure at inference. Keep history/item/time inputs intact, and keep the V13 auxiliary objective unchanged. One dropout rate is specified, no sweep.
+
+Use a separate seeded Torch generator so masking does not change initialization or the NumPy auxiliary sampler. The cold scale starts equal to the original scale and adds no random draws. Masked profile identity/exposure must not affect scores. Inference is deterministic with no random masks. Use fitting-only exposure to choose the cold path. Compare against V13 on identical January 26 and January 25 frames; confirm January 24 if promising. Optimize global row AUC, not subgroup score alone. No upload; preserve V13.
