@@ -1,0 +1,17 @@
+{
+  "day": 26,
+  "mode": "frozen",
+  "epochs": 12,
+  "anchor": 10,
+  "lr": 0.0024,
+  "full": false,
+  "seed": 42,
+  "tag": "stable",
+  "dim": 32,
+  "no_history": false,
+  "cosine": false,
+  "objective": "softmax",
+  "family": "stable_v3",
+  "reg": 1,
+  "aux": 0.5
+}
