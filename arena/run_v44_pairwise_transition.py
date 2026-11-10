@@ -1,0 +1,59 @@
+"""Test a pairwise bilinear history transition model."""
+import numpy as np
+from scipy.special import expit, logit
+from sklearn.linear_model import SGDClassifier
+
+from common import DATA, RUNS, load, record, split
+
+
+def main():
+    data = load()
+    for day in (24, 25, 26):
+        fit, valid = split(data, day)
+        path = DATA/f'spectral_{data["time"][fit[-1]]}_r64_iter25_reg0.npz'
+        with np.load(path) as factors:
+            embedding = factors['i'][:, 1:17].astype('float32')
+        embedding /= np.maximum(np.linalg.norm(embedding, axis=1, keepdims=True), 1e-8)
+        embedding[0] = 0
+
+        def design(events):
+            history = data['history'][events]
+            age = data['time'][events, None] - data['htime'][events]
+            weights = np.exp2(-np.maximum(age, 0) / 86400).astype('float32')
+            weights *= history > 0
+            weights /= np.maximum(weights.sum(axis=1, keepdims=True), 1e-8)
+            previous = np.einsum('eh,ehd->ed', weights, embedding[history])
+            candidate = embedding[data['item'][events]]
+            cross = previous[:, None, :, None] * candidate[:, :, None, :]
+            return cross.reshape(-1, 256)
+
+        model = SGDClassifier(loss='log_loss', alpha=.00001, average=True, random_state=42)
+        rng = np.random.default_rng(42)
+        for _ in range(2):
+            order = rng.permutation(fit[data["label"][fit].sum(axis=1) == 1])
+            for start in range(0, len(order), 4096):
+                events = order[start:start+4096]
+                vectors = design(events).reshape(-1, 10, 256)
+                clicked = data['label'][events] == 1
+                difference = (vectors[clicked][:, None] - vectors[~clicked].reshape(-1, 9, 256))
+                difference = difference.reshape(-1, 256)
+                signs = rng.choice(np.array([-1, 1], dtype='float32'), len(difference))
+                model.partial_fit(difference * signs[:, None], signs > 0, classes=[0, 1])
+
+        frame = RUNS/'v31_verified'/f'v31_decay_d32_day{day}_s42'/'valid_events.npy'
+        if not np.array_equal(valid, np.load(frame)):
+            raise ValueError('Validation event alignment differs')
+        transition = np.concatenate([
+            model.decision_function(design(valid[start:start+4096]))
+            for start in range(0, len(valid), 4096)
+        ]).reshape(-1, 10) - model.intercept_[0]
+        transition -= transition.mean(axis=1, keepdims=True)
+        base = np.load(RUNS/'v37_join'/f'raw{day}.npy')
+        for weight in (0., .1, .25):
+            prediction = expit(logit(base.clip(1e-6, 1-1e-6)) + weight*transition)
+            record('v44_pairwise_transition', day, data['label'][valid], prediction,
+                   weight=weight, fit_events=len(fit), embedding=str(path))
+
+
+if __name__ == '__main__':
+    main()
