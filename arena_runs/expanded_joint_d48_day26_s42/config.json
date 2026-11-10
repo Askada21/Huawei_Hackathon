@@ -1,0 +1,20 @@
+{
+  "day": 26,
+  "dim": 48,
+  "epochs": 12,
+  "pretrain": 0,
+  "seed": 42,
+  "lr": 0.008,
+  "reg": 1.0,
+  "no_history": false,
+  "objective": "softmax",
+  "tag": "expanded_joint",
+  "full": false,
+  "svd_init": true,
+  "cosine": false,
+  "anchor": 0,
+  "als_init": false,
+  "svd_iters": 25,
+  "aux": 0.5,
+  "degree_reg": 0
+}
