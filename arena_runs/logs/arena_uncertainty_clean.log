@@ -1,0 +1,16 @@
+{
+  "bootstrap_unit": "event = distinct validation user, all 10 rows together",
+  "replicates": 150,
+  "seed": 42,
+  "auc": 0.8089944032037183,
+  "auc_95_percentile_interval": [
+    0.8063884938846857,
+    0.8120917775154963
+  ],
+  "delta_vs_calibrated_converged": 0.0007354338181170261,
+  "delta_95_percentile_interval": [
+    0.00041866033084032584,
+    0.0009823860236453875
+  ],
+  "limitation": "Sampling uncertainty only; does not account for model selection or temporal distribution shift."
+}
