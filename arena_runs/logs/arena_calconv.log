@@ -1,0 +1,19 @@
+Training until validation scores don't improve for 35 rounds
+[50]	valid_0's auc: 0.748942
+[100]	valid_0's auc: 0.754377
+[150]	valid_0's auc: 0.756695
+[200]	valid_0's auc: 0.757726
+[250]	valid_0's auc: 0.758159
+[300]	valid_0's auc: 0.758308
+[350]	valid_0's auc: 0.758645
+[400]	valid_0's auc: 0.758808
+[450]	valid_0's auc: 0.758874
+[500]	valid_0's auc: 0.758953
+Did not meet early stopping. Best iteration is:
+[499]	valid_0's auc: 0.758962
+{"name": "calibrator_inner_raw", "day": 25, "auc": 0.7335506054417588, "logloss": 0.25871020555496216, "recorded_utc": "2026-11-01T21:56:31.667379+00:00"}
+{"name": "calibrator_inner_tree", "day": 25, "auc": 0.7589615845879449, "logloss": 0.20612187271756424, "recorded_utc": "2026-11-01T21:56:32.016261+00:00", "iteration": 499}
+{"name": "calibrated_converged", "day": 26, "auc": 0.8087994157859401, "logloss": 0.19757737750225907, "recorded_utc": "2026-11-01T21:56:41.488544+00:00", "artifact": "./arena_runs/calibrated_converged"}
+{"name": "calibrated_converged_raw_weight0.25", "day": 26, "auc": 0.8074315931972322, "logloss": 0.19577210463038366, "recorded_utc": "2026-11-01T21:56:41.611557+00:00"}
+{"name": "calibrated_converged_raw_weight0.5", "day": 26, "auc": 0.803407336724142, "logloss": 0.1971816424644999, "recorded_utc": "2026-11-01T21:56:41.731065+00:00"}
+{"name": "calibrated_converged_raw_weight0.75", "day": 26, "auc": 0.7993055537849623, "logloss": 0.20103903167804724, "recorded_utc": "2026-11-01T21:56:41.853255+00:00"}
