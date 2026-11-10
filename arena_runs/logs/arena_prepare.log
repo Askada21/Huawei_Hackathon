@@ -1,0 +1,9 @@
+train 100000 events 8.1 sec
+train 200000 events 16.3 sec
+train 300000 events 25.1 sec
+train 400000 events 33.5 sec
+train 500000 events 41.9 sec
+train 600000 events 50.3 sec
+train complete 686824
+evaluation complete 52939
+Users 54456 items 50000
