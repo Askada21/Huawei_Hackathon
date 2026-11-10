@@ -1,0 +1,11 @@
+{
+  "raw": "./arena_runs/v14_coldpath_d32_day25_s42/valid_pred.npy",
+  "combined": "./arena_runs/v15_screen31_day25/valid_pred.npy",
+  "raw_events": "./arena_runs/v14_coldpath_d32_day25_s42/valid_events.npy",
+  "combined_events": "./arena_runs/v15_screen31_day25/valid_events.npy",
+  "out": "./arena_runs/v15_screen31_day25/valid_blend.npy",
+  "raw_weight": 0.25,
+  "events": 43964,
+  "probabilities_finite_in_range": true,
+  "events_sha256": "7ee54b0f810f7136866b0518d74fcdfeae9c37c5235cd7ee5e5bfd2bec4e07df"
+}
