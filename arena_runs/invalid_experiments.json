@@ -1,0 +1,10 @@
+{
+  "reason": "An earlier first-event validation sample extended into the next validation period; initial stacking included overlapping labelled events. Corrected before delivery.",
+  "excluded_artifact_directory": "calibrated_converged",
+  "excluded_experiment_name_prefix": "calibrated_converged",
+  "exclude_calibrator_inner_records_before_utc": "2026-11-01T22:00:00+00:00",
+  "exclude_joint_factor_frozen_calibration_and_blend_records_before_utc": "2026-11-01T22:00:00+00:00",
+  "exclude_prediction_files": ["valid_calibrated.npy", "evaluation_calibrated.npy"],
+  "valid_deliverable_calibrator": "calibrated_clean",
+  "valid_prediction_filename_suffix": "calibrated_clean.npy"
+}
