@@ -1,0 +1,9 @@
+epoch 1 loss 1.7632071810464065 auc 0.7351417711438273 seconds 8
+epoch 2 loss 1.4186488650739193 auc 0.748798501005354 seconds 16
+epoch 3 loss 1.1646185372438695 auc 0.7521902069322614 seconds 23
+epoch 4 loss 0.9860931576953994 auc 0.75052505506646 seconds 31
+epoch 5 loss 0.8563475884083245 auc 0.7473834146302146 seconds 39
+epoch 6 loss 0.7573682773444388 auc 0.7427328594767822 seconds 44
+epoch 7 loss 0.6803091749962833 auc 0.7383047981631742 seconds 51
+epoch 8 loss 0.6176023514320453 auc 0.7351470342066843 seconds 57
+{"name": "degree_factor_d32_day26_s42", "day": 26, "auc": 0.7521902069322614, "logloss": 0.23752416670322418, "recorded_utc": "2026-11-01T21:58:36.259518+00:00", "config": {"day": 26, "dim": 32, "epochs": 12, "pretrain": 0, "seed": 42, "lr": 0.008, "reg": 1.0, "no_history": false, "objective": "softmax", "tag": "degree_factor", "full": false, "svd_init": true, "cosine": false, "anchor": 0, "als_init": false, "svd_iters": 25, "aux": 0, "degree_reg": 10.0}, "seconds": 57.20253276824951, "artifact": "./arena_runs/degree_factor_d32_day26_s42"}
