@@ -1,0 +1,8 @@
+epoch 1 loss 0.5263137943628762 auc 0.7698320143026316 seconds 8
+epoch 2 loss 0.35712018329650164 auc 0.7708982929882258 seconds 16
+epoch 3 loss 0.30055923232187826 auc 0.7688804259143824 seconds 24
+epoch 4 loss 0.26612196603996885 auc 0.7685772092612039 seconds 31
+epoch 5 loss 0.241966148165779 auc 0.7676182152216849 seconds 39
+epoch 6 loss 0.2248096083704796 auc 0.7647175340365379 seconds 47
+epoch 7 loss 0.2124628284946084 auc 0.7628273349239256 seconds 56
+{"name": "binary_factor_d32_day26_s42", "day": 26, "auc": 0.7708982929882258, "logloss": 0.20865364372730255, "recorded_utc": "2026-11-01T21:55:56.156867+00:00", "config": {"day": 26, "dim": 32, "epochs": 12, "pretrain": 0, "seed": 42, "lr": 0.008, "reg": 1.0, "no_history": false, "objective": "binary", "tag": "binary_factor", "full": false, "svd_init": true, "cosine": false, "anchor": 0, "als_init": false, "svd_iters": 25}, "seconds": 55.579010248184204, "artifact": "./arena_runs/binary_factor_d32_day26_s42"}
