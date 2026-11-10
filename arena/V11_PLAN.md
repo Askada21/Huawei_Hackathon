@@ -1,0 +1,5 @@
+# V11: contextual auxiliary preference learning
+
+V8's supervised impressions use a time-conditioned preference transform, but its auxiliary historical-click comparisons use only the static user vector. This is an intentional baseline design, not a proven correctness bug. Test aligning auxiliary preferences with the known click-time bucket. Controls must be actual fitting-period nonclicked impressions from the same user and same six-hour bucket. Skip users/buckets with no controls, and omit same-item pairs as before.
+
+This is one coherent objective/sampling hypothesis: both contextual scoring and matching negative contexts change. Keep V8 rank, parameter initialization, loss weights, regularization, seed and downstream blend fixed. Do not combine with rejected V9/V10 features. Compare January 26 and strictly selected January 25 factors, then complete row/event pipelines on identical frames. Require credible evidence before full refit. Preserve V8 and all prior artifacts, and never upload automatically.
