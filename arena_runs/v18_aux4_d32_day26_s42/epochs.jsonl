@@ -1,0 +1,6 @@
+{"epoch": 1, "loss": 2.0346735769675837, "seconds": 11.113632202148438, "auc": 0.8146696948311801, "selection_auc": 0.8146696948311801, "selection_events": 35138}
+{"epoch": 2, "loss": 1.7151547620693843, "seconds": 22.58891010284424, "auc": 0.8170495544076303, "selection_auc": 0.8170495544076303, "selection_events": 35138}
+{"epoch": 3, "loss": 1.4914792370465066, "seconds": 33.92440605163574, "auc": 0.816000978311246, "selection_auc": 0.816000978311246, "selection_events": 35138}
+{"epoch": 4, "loss": 1.3237108145323064, "seconds": 45.651395082473755, "auc": 0.8133607997693113, "selection_auc": 0.8133607997693113, "selection_events": 35138}
+{"epoch": 5, "loss": 1.2051974998580084, "seconds": 60.08086919784546, "auc": 0.8102410207353754, "selection_auc": 0.8102410207353754, "selection_events": 35138}
+{"epoch": 6, "loss": 1.1164160288042493, "seconds": 75.8594560623169, "auc": 0.8069545307602528, "selection_auc": 0.8069545307602528, "selection_events": 35138}
