@@ -1,0 +1,13 @@
+{"epoch": 1, "loss": 2.101398665706317, "seconds": 6.503727197647095, "auc": 0.6867360495314325, "selection_auc": 0.689600425984327, "selection_events": 35230}
+{"epoch": 2, "loss": 1.8648675337433815, "seconds": 12.762880086898804, "auc": 0.712293247756031, "selection_auc": 0.7152158220434127, "selection_events": 35230}
+{"epoch": 3, "loss": 1.6776472066839536, "seconds": 18.8883159160614, "auc": 0.7359169016401967, "selection_auc": 0.7393185040295697, "selection_events": 35230}
+{"epoch": 4, "loss": 1.5068108528852462, "seconds": 25.028254985809326, "auc": 0.7531250837932943, "selection_auc": 0.7568081889018581, "selection_events": 35230}
+{"epoch": 5, "loss": 1.3587056249380112, "seconds": 30.833100080490112, "auc": 0.7658186807704249, "selection_auc": 0.7696285378216687, "selection_events": 35230}
+{"epoch": 6, "loss": 1.2350067272782326, "seconds": 36.68472909927368, "auc": 0.7746159944792149, "selection_auc": 0.778266046481366, "selection_events": 35230}
+{"epoch": 7, "loss": 1.1425285374124845, "seconds": 42.468409061431885, "auc": 0.7774173965754516, "selection_auc": 0.7810298743124651, "selection_events": 35230}
+{"epoch": 8, "loss": 1.0706190884113311, "seconds": 48.77163600921631, "auc": 0.7785850100905793, "selection_auc": 0.78217179374236, "selection_events": 35230}
+{"epoch": 9, "loss": 1.0117375140388807, "seconds": 54.530109882354736, "auc": 0.7787504237937805, "selection_auc": 0.7823223861210444, "selection_events": 35230}
+{"epoch": 10, "loss": 0.9636919354399045, "seconds": 60.14992308616638, "auc": 0.7782932757038377, "selection_auc": 0.7818418958703048, "selection_events": 35230}
+{"epoch": 11, "loss": 0.9240697617332141, "seconds": 65.88624215126038, "auc": 0.7777658971596058, "selection_auc": 0.7813628491060933, "selection_events": 35230}
+{"epoch": 12, "loss": 0.8894924198587736, "seconds": 71.45034003257751, "auc": 0.7769709018396339, "selection_auc": 0.7806309608397034, "selection_events": 35230}
+{"epoch": 13, "loss": 0.8577826090157032, "seconds": 77.42731809616089, "auc": 0.7762294416285035, "selection_auc": 0.7799287202917262, "selection_events": 35230}
