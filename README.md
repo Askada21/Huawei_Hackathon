@@ -1,4 +1,4 @@
-# Huawei TechArena 2026 — Phase 1 click prediction
+# Huawei TechArena 2026 - Phase 1 click prediction
 
 Our seven-person student team took part in Huawei Ireland TechArena for the first time. We developed a recommendation click prediction system and did not qualify for Phase 2. This repository collects the code and experimental evidence from that work.
 
